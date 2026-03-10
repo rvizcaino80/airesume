@@ -15,7 +15,8 @@ export const profile = {
 export const about = [
   "I build frontend systems that turn product requirements into clear, scalable interfaces, with a focus on React, Vue.js, JavaScript/TypeScript, reusable UI patterns, and maintainable architecture.",
   "I combine strong technical judgment with a background in graphic design, UX, and UI, which helps me create interfaces grounded in visual hierarchy, layout, spacing, typography, color, and design systems.",
-  "Across SaaS, enterprise, and media products, I collaborate across component architecture, API integration, testing, and delivery workflows to ship stable user-facing systems."
+  "Across SaaS, enterprise, and media products, I collaborate across component architecture, API integration, testing, and delivery workflows to ship stable user-facing systems.",
+  "I also have experience working in security-sensitive environments where strong engineering practices are required. My frontend work follows secure-by-default principles such as safe authentication flows, secure API interaction patterns, and prevention of common web vulnerabilities. These practices align well with the standards expected in regulated infrastructures, including environments with IL-5-style security requirements."
 ];
 
 export const stack = [
@@ -57,6 +58,16 @@ export const stack = [
     ]
   },
   {
+    category: "Security & Compliance",
+    items: [
+      "Secure frontend engineering practices",
+      "IL5-aligned environments",
+      "Secure authentication flows",
+      "XSS / CSRF prevention",
+      "Content Security Policy (CSP)"
+    ]
+  },
+  {
     category: "Testing",
     items: ["Jest", "Vitest", "Component testing"]
   },
@@ -76,8 +87,14 @@ export const experience = [
     title: "Senior Frontend Engineer",
     company: "Authvia",
     description:
-      "Worked on a financial SaaS platform focused on secure communication and payment workflows for financial institutions and regulated organizations. Built and maintained production frontend features, reusable UI components, and shared patterns used across multiple applications.",
-    tags: ["React", "JavaScript/TypeScript", "Azure DevOps", "UI Architecture"]
+      "Worked on a financial SaaS platform focused on secure communication and payment workflows for financial institutions and regulated organizations. Built and maintained production frontend features, reusable UI components, and shared UI patterns used across multiple applications.\n\nContributed to frontend architecture and CI/CD workflows while collaborating with backend teams on secure API integrations handling sensitive financial data. Implemented frontend practices aligned with secure-by-default engineering, including safe authentication flows, secure API interaction patterns, and prevention of common web vulnerabilities such as XSS and CSRF.\n\nExperience in this fintech environment required strong attention to reliability, security, and compliance practices similar to those used in regulated infrastructures and IL-5-style secure systems.",
+    tags: [
+      "React",
+      "JavaScript / TypeScript",
+      "Azure DevOps",
+      "UI Architecture",
+      "Secure frontend practices"
+    ]
   },
   {
     period: "2022 - 2023",

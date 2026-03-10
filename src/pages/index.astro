@@ -88,7 +88,9 @@ import {
                   <h2>
                     {item.title} <span>@ {item.company}</span>
                   </h2>
-                  <p>{item.description}</p>
+                  <div class="entry-copy">
+                    {item.description.split("\n\n").map((paragraph) => <p>{paragraph}</p>)}
+                  </div>
                   <ul class="tag-list">
                     {item.tags.map((tag) => <li>{tag}</li>)}
                   </ul>

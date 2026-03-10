@@ -254,6 +254,11 @@ h2 {
   color: var(--muted);
 }
 
+.entry-copy {
+  display: grid;
+  gap: 0.9rem;
+}
+
 .card-stack {
   display: grid;
   gap: 1rem;
