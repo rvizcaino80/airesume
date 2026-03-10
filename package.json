@@ -1,0 +1,17 @@
+{
+  "name": "rogersvizcaino",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/node": "^9.5.4",
+    "astro": "^5.18.0",
+    "zod": "^3.25.76"
+  }
+}

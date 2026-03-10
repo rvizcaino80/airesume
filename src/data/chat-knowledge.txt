@@ -1,0 +1,342 @@
+You can edit this file freely. The chat feature will use it as the source of truth when answering questions about Rogers Vizcaino.
+Important rule:
+
+Only answer based on the information explicitly present in this file.
+
+If a skill or experience is not explicitly listed here, assume Rogers does not have professional experience with it.
+========================
+Identity
+========================
+
+Name: Rogers Vizcaino
+Title: Senior Frontend Engineer
+Nationality: Colombian
+Date of birth: February 27, 1980
+Age: 46
+
+Primary locations:
+- Bogotá, Colombia
+- Barranquilla, Colombia
+
+Mobility:
+Rogers moves between Bogotá and Barranquilla but works fully remote and collaborates with international teams.
+
+Work preference:
+Remote-first (global teams)
+
+Languages:
+- Spanish: Native
+- English: Professional working proficiency
+
+Years of experience:
+- 20+ years software development
+- 8+ years modern frontend engineering
+
+Professional identity:
+Senior frontend engineer specializing in scalable UI architecture, reusable component systems, and modern frontend platforms.
+
+Rogers combines strong engineering experience with a background in graphic design, UX, and UI design, which gives him a unique perspective when designing software interfaces.
+
+He has extensive experience building SaaS platforms, enterprise applications, and high-traffic web systems used by thousands or millions of users.
+
+Key interests:
+- Frontend platform engineering
+- Design systems
+- Micro-frontend architectures
+- Scalable UI frameworks
+- AI-assisted user experiences
+- Workflow-driven user interfaces
+
+
+========================
+Professional Summary
+========================
+
+Rogers Vizcaino is a senior frontend engineer with more than two decades of software development experience and over eight years specializing in modern frontend technologies.
+
+He focuses on building scalable user interfaces using React, Vue.js, and TypeScript, with a strong emphasis on reusable UI components, maintainable architectures, and high-quality developer experience.
+
+Rogers has worked on enterprise SaaS platforms, fintech systems, media platforms, and enterprise analytics software across distributed engineering teams.
+
+His work often focuses on:
+
+- Designing reusable UI components and shared frontend patterns
+- Building scalable frontend architectures
+- Improving developer experience and maintainability
+- Integrating frontend applications with cloud-based backend services
+- Optimizing performance and user experience in complex interfaces
+
+Rogers has a strong passion for user experience and interface design. His background in UX and UI allows him to design software interfaces that are not only technically robust but also intuitive and user-centered.
+
+He is particularly interested in the future of intelligent interfaces, where AI can enhance user experience through contextual guidance, workflow assistance, and smarter UI interactions.
+
+
+========================
+Engineering Philosophy
+========================
+
+Rogers believes that the primary goal of software engineering is to build systems that remain understandable, maintainable, and evolvable over time.
+
+His engineering philosophy focuses on pragmatic solutions that prioritize clarity and long-term maintainability over unnecessary complexity.
+
+Key principles:
+
+Clarity over cleverness
+Code should be easy to read and reason about. Simplicity improves collaboration and reduces long-term maintenance costs.
+
+Reusable systems over isolated implementations
+Building reusable components and shared UI systems enables faster development and more consistent user experiences.
+
+User experience as a core engineering responsibility
+Frontend engineering is not only about rendering UI but also about designing intuitive user experiences that guide users through complex workflows.
+
+Performance as part of product quality
+Responsive interfaces are essential for modern applications, especially at scale.
+
+Continuous improvement
+Engineering systems should evolve over time through refactoring, improved tooling, and better architectural decisions.
+
+Rogers views frontend engineering as a discipline that sits at the intersection of software architecture, product design, and user experience.
+
+
+========================
+Core Engineering Strengths
+========================
+
+Frontend Architecture
+Designing scalable frontend systems that support complex applications and multiple product surfaces.
+
+Reusable Component Systems
+Building shared component libraries and UI frameworks that enable consistent development across teams.
+
+Design Systems & UX Engineering
+Strong focus on UI consistency, accessibility, and user-centered interface design.
+
+Micro-Frontend Architectures
+Experience implementing modular frontend architectures using Module Federation.
+
+Performance Optimization
+Deep experience optimizing rendering performance, bundle size, and responsiveness in large applications.
+
+Cloud-integrated applications
+Building frontend systems that interact with cloud-native backend services.
+
+Developer Experience
+Improving maintainability, CI/CD pipelines, code quality practices, and development workflows.
+
+Technical Leadership
+Experience performing code reviews, mentoring engineers, making architectural decisions, and leading frontend initiatives.
+
+
+========================
+Architecture Expertise
+========================
+
+Rogers has experience designing and contributing to modern frontend architectures supporting complex applications.
+
+Areas of architectural expertise include:
+
+Frontend platforms
+Designing shared frontend foundations that support multiple product surfaces.
+
+Component-driven architectures
+Building scalable UI systems through reusable components and design systems.
+
+Micro-frontends
+Experience implementing modular frontend architectures using Module Federation.
+
+Cloud-integrated frontend systems
+Frontend applications interacting with cloud-based backend services and APIs.
+
+Performance-oriented architectures
+Designing systems that remain responsive even as applications grow in complexity.
+
+Developer experience
+Improving development workflows, CI/CD pipelines, and maintainable code structures.
+
+
+========================
+Professional Experience
+========================
+
+Authvia
+Senior Frontend Engineer
+2023 – 2025
+
+Authvia is a B2B fintech company that provides conversational commerce technology enabling secure payments and customer communication through messaging platforms.
+
+Responsibilities and contributions:
+
+- Developed production-grade frontend features for a financial SaaS platform
+- Built reusable UI components used across multiple features
+- Contributed to frontend architectural decisions
+- Collaborated closely with backend teams integrating secure payment and messaging APIs
+- Improved CI/CD workflows and frontend maintainability
+- Maintained consistent UI patterns across the platform
+- Participated in code reviews and mentoring practices
+
+
+Crossbridge Global Partners
+Frontend Engineer
+2022 – 2023
+
+Crossbridge provides enterprise digital solutions and consulting services for global organizations.
+
+Responsibilities and contributions:
+
+- Developed enterprise frontend interfaces using React and TypeScript
+- Built modular UI components reused across internal enterprise applications
+- Worked on enterprise systems supporting internal digital operations
+- Contributed to projects related to Louis Vuitton digital platforms
+- Collaborated with engineering teams to ship new platform capabilities
+
+
+Zemoga / DIRECTV
+Frontend Developer
+2021 – 2022
+
+Worked on digital platforms for media and streaming products used by large audiences.
+
+Responsibilities and contributions:
+
+- Developed frontend features for media and streaming platforms
+- Built responsive UI components used across multiple web applications
+- Implemented modern JavaScript frameworks and component architectures
+- Integrated frontend systems with backend services through REST APIs
+- Contributed to platforms used by thousands to millions of users
+
+
+Golden Security Services / GSS Analytix
+Software Engineer
+
+Worked on enterprise analytics and operational intelligence platforms used by corporate and security clients.
+
+GSS Analytix provides business intelligence and analytics tools that help organizations monitor operations, analyze data, and improve decision-making.
+
+Responsibilities included developing web interfaces and software tools supporting operational analytics systems.
+
+
+========================
+Product Scale Experience
+========================
+
+Experience working on platforms serving:
+
+DIRECTV / media platforms
+- thousands to millions of users
+
+Enterprise SaaS platforms
+- thousands of users
+
+Fintech SaaS systems
+- secure transactional systems
+
+
+========================
+Technology Stack
+========================
+
+Frontend frameworks
+- React
+- Vue.js
+- Next.js
+- Astro
+
+Languages
+- JavaScript
+- TypeScript
+- HTML
+- CSS
+
+Styling
+- Tailwind CSS
+
+Frontend architecture
+- Component-driven development
+- Design systems
+- Micro-frontends
+- Module Federation
+- SPA and SSR architectures
+
+Testing
+- Jest
+- Vitest
+- Component testing
+
+Build tools
+- Vite
+
+Version control
+- Git
+
+
+========================
+Cloud Experience
+========================
+
+Experience working with modern cloud environments including:
+
+- Microsoft Azure
+- AWS
+- Netlify
+- Vercel
+
+Frontend systems typically interact with backend APIs hosted in cloud environments.
+
+Experience working with CI/CD systems including:
+
+- Azure DevOps
+- GitHub Actions
+- GitLab CI/CD
+
+
+========================
+AI & Intelligent Interfaces
+========================
+
+Rogers is actively interested in integrating artificial intelligence into software products, particularly in the context of user interfaces and user experience.
+
+Areas of interest include:
+
+- AI-assisted user interfaces
+- Context-aware UI workflows
+- Intelligent workflow guidance
+- AI copilots embedded into SaaS platforms
+
+He has experimented with AI APIs and developer tools including:
+
+- OpenAI APIs
+- DeepSeek
+- AI-assisted development tools
+
+
+========================
+Personal Project
+========================
+
+PromptsMaestros.com
+
+A project focused on building a platform and ecosystem around AI prompts and prompt engineering.
+
+The project explores how structured prompts and AI tools can improve productivity, creativity, and knowledge workflows.
+
+This reflects Rogers' interest in:
+
+- AI-powered knowledge systems
+- prompt engineering
+- developer productivity tools
+- modern web platforms
+
+
+========================
+Contact
+========================
+
+Email
+rvizcaino@gmail.com
+
+GitHub
+https://github.com/rogersvizcaino
+
+LinkedIn
+https://www.linkedin.com/in/rogersvizcaino

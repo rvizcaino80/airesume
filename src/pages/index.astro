@@ -1,0 +1,334 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import {
+  about,
+  experience,
+  highlights,
+  languages,
+  profile,
+  stack
+} from "../data/site";
+---
+
+<BaseLayout
+  title={`${profile.name} | ${profile.role}`}
+  description={profile.intro.join(" ")}
+>
+  <div class="page-shell">
+    <aside class="sidebar">
+      <div class="sidebar__inner">
+        <a class="brand" href="#top">{profile.name}</a>
+        <p class="role">{profile.role}</p>
+        <p class="location">{profile.location}</p>
+        <p class="availability availability--sidebar">
+          <span class="availability-dot" aria-hidden="true"></span>
+          Open to work (Remote)
+        </p>
+        <div class="intro">
+          {profile.intro.map((paragraph) => <p>{paragraph}</p>)}
+        </div>
+
+        <nav class="section-nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#stack">Stack</a>
+          <a href="#experience">Experience</a>
+          <a href="#highlights">Highlights</a>
+          <a href="#languages">Languages</a>
+        </nav>
+
+        <a class="sidebar-email" href={`mailto:${profile.email}`}>{profile.email}</a>
+
+        <ul class="social-list" aria-label="Social links">
+          {
+            profile.social.map((item) => (
+              <li>
+                <a href={item.href} target="_blank" rel="noreferrer">
+                  {item.label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </aside>
+
+    <main class="content" id="top">
+      <section class="section" id="about">
+        <span class="eyebrow">About</span>
+        <div class="copy-stack">
+          {about.map((paragraph) => <p>{paragraph}</p>)}
+        </div>
+      </section>
+
+      <section class="section" id="stack">
+        <span class="eyebrow">Stack</span>
+        <div class="stack-grid">
+          {
+            stack.map((group) => (
+              <article class="stack-card">
+                <h2>{group.category}</h2>
+                <ul class="tag-list">
+                  {group.items.map((item) => <li>{item}</li>)}
+                </ul>
+              </article>
+            ))
+          }
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <span class="eyebrow">Experience</span>
+        <div class="card-stack">
+          {
+            experience.map((item) => (
+              <article class="entry-card">
+                <p class="meta">{item.period}</p>
+                <div class="entry-card__body">
+                  <h2>
+                    {item.title} <span>@ {item.company}</span>
+                  </h2>
+                  <p>{item.description}</p>
+                  <ul class="tag-list">
+                    {item.tags.map((tag) => <li>{tag}</li>)}
+                  </ul>
+                </div>
+              </article>
+            ))
+          }
+        </div>
+      </section>
+
+      <section class="section" id="highlights">
+        <span class="eyebrow">Highlights</span>
+        <div class="card-stack">
+          {
+            highlights.map((item) => (
+              <article class="entry-card entry-card--link">
+                <div class="entry-card__body">
+                  <h2>{item.name}</h2>
+                  <p>{item.description}</p>
+                  <ul class="tag-list">
+                    {item.tags.map((tag) => <li>{tag}</li>)}
+                  </ul>
+                </div>
+              </article>
+            ))
+          }
+        </div>
+      </section>
+
+      <section class="section" id="languages">
+        <span class="eyebrow">Languages</span>
+        <div class="languages-list">
+          {
+            languages.map((language) => (
+              <article class="language-row">
+                <h2>{language.name}</h2>
+                <p>{language.level}</p>
+              </article>
+            ))
+          }
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <button
+    class="chat-launcher"
+    type="button"
+    data-chat-open
+    aria-haspopup="dialog"
+    aria-controls="chat-overlay"
+    aria-expanded="false"
+  >
+    <span class="chat-launcher__label">Ask me anything...</span>
+    <span class="chat-launcher__pill">AI</span>
+  </button>
+
+  <div
+    class="chat-overlay"
+    id="chat-overlay"
+    data-chat-overlay
+    aria-hidden="true"
+  >
+    <div class="chat-overlay__backdrop" data-chat-close></div>
+
+    <section
+      class="chat-panel"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Ask me anything"
+    >
+      <div class="chat-thread" data-chat-thread>
+        <article class="chat-message chat-message--assistant">
+          <img
+            class="chat-message__avatar"
+            src="/rogers-avatar.png"
+            alt="Rogers avatar"
+            width="40"
+            height="40"
+          />
+          <div class="chat-message__bubble">
+            <p>
+              Hi, I'm Rogers. Ask me anything about my experience, stack, or availability. You can ask in English or Spanish.
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <form class="chat-composer" data-chat-form>
+        <label class="sr-only" for="chat-input">Ask me anything...</label>
+        <div class="chat-composer__row">
+          <input
+            id="chat-input"
+            name="message"
+            type="text"
+            placeholder="Ask me anything..."
+            autocomplete="off"
+            maxlength="100"
+            required
+          />
+          <button type="submit">Send</button>
+        </div>
+        <p class="chat-status" data-chat-status></p>
+      </form>
+    </section>
+  </div>
+
+  <script is:inline>
+    const body = document.body;
+    const openButton = document.querySelector("[data-chat-open]");
+    const overlay = document.querySelector("[data-chat-overlay]");
+    const closeButtons = document.querySelectorAll("[data-chat-close]");
+    const form = document.querySelector("[data-chat-form]");
+    const status = document.querySelector("[data-chat-status]");
+    const thread = document.querySelector("[data-chat-thread]");
+    const input = document.querySelector("#chat-input");
+
+    const setChatOpen = (isOpen) => {
+      if (!overlay || !openButton) return;
+      overlay.classList.toggle("is-open", isOpen);
+      overlay.setAttribute("aria-hidden", String(!isOpen));
+      openButton.setAttribute("aria-expanded", String(isOpen));
+      body.classList.toggle("chat-open", isOpen);
+
+      if (isOpen && input instanceof HTMLInputElement) {
+        window.setTimeout(() => input.focus(), 180);
+      }
+    };
+
+    const appendMessage = (content, role) => {
+      if (!thread) return;
+      const article = document.createElement("article");
+      article.className = `chat-message chat-message--${role}`;
+      const avatar = document.createElement("img");
+      avatar.className = "chat-message__avatar";
+      avatar.width = 40;
+      avatar.height = 40;
+      avatar.alt = role === "assistant" ? "Rogers avatar" : "User avatar";
+      avatar.src = role === "assistant" ? "/rogers-avatar.png" : "/user-avatar.png";
+      const bubble = document.createElement("div");
+      bubble.className = "chat-message__bubble";
+      const paragraph = document.createElement("p");
+      if (role === "assistant") {
+        const escaped = content
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;");
+        const withLinks = escaped.replace(
+          /\[([^\]]+)\]\((https:\/\/[^)\s]+)\)/g,
+          '<a href="$2" target="_blank" rel="noreferrer">$1</a>'
+        );
+        paragraph.innerHTML = withLinks;
+      } else {
+        paragraph.textContent = content;
+      }
+      bubble.appendChild(paragraph);
+      article.appendChild(avatar);
+      article.appendChild(bubble);
+      thread.appendChild(article);
+      thread.scrollTop = thread.scrollHeight;
+      return article;
+    };
+
+    const looksLikeSpanish = (text) => {
+      const sample = text.toLowerCase();
+      return /[áéíóúñ¿¡]/.test(sample) ||
+        /\b(hola|como|cómo|qué|que|cual|cuál|dónde|donde|por qué|porque|puedes|podrías|tienes|tengo|eres|soy|estás|esta|está|tú|tu|experiencia|trabajo|disponibilidad|español|correo|linkedin|remoto|frontend|stack|feliz|pregunta|hablar|hablas|puedo|quiero)\b/.test(sample);
+    };
+
+    if (openButton && overlay) {
+      openButton.addEventListener("click", () => setChatOpen(true));
+      closeButtons.forEach((button) => {
+        button.addEventListener("click", () => setChatOpen(false));
+      });
+
+      window.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+          setChatOpen(false);
+        }
+      });
+    }
+
+    if (form && status && thread && input) {
+      form.addEventListener("submit", async (event) => {
+        event.preventDefault();
+
+        const formData = new FormData(form);
+        const message = String(formData.get("message") || "").trim();
+
+        if (!message) {
+          status.textContent = "Write a question first.";
+          return;
+        }
+
+        if (message.length > 100) {
+          status.textContent = "Use 100 characters or fewer.";
+          return;
+        }
+
+        appendMessage(message, "user");
+        form.reset();
+        status.textContent = "";
+        input.focus();
+        const pendingMessage = appendMessage(
+          looksLikeSpanish(message) ? "Escribiendo..." : "Typing...",
+          "assistant"
+        );
+
+        try {
+          const result = await fetch("/api/chat", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ message })
+          });
+
+          const data = await result.json();
+
+          if (!result.ok) {
+            throw new Error(data?.error || "Request failed.");
+          }
+
+          pendingMessage?.remove();
+          appendMessage(data.reply, "assistant");
+          status.textContent = "";
+        } catch (error) {
+          pendingMessage?.remove();
+          appendMessage(
+            error instanceof Error
+              ? error.message
+              : "Something went wrong while contacting the chat endpoint.",
+            "assistant"
+          );
+          status.textContent =
+            error instanceof Error
+              ? error.message
+              : "Something went wrong while contacting the chat endpoint.";
+        }
+      });
+    }
+  </script>
+</BaseLayout>
