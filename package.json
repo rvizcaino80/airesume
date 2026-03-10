@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@astrojs/react": "^4.4.2",
+    "@fontsource/vend-sans": "^5.2.2",
     "astro": "^5.18.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
