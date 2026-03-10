@@ -1,56 +1,45 @@
-import type { APIRoute } from "astro";
-import knowledgeBase from "../../data/chat-knowledge.txt?raw";
-
-export const prerender = false;
+const fs = require("node:fs/promises");
+const path = require("node:path");
 
 const DEFAULT_MODEL = "deepseek-chat";
 const DEFAULT_BASE_URL = "https://api.deepseek.com/chat/completions";
 
-export const POST: APIRoute = async ({ request }) => {
-  const apiKey = import.meta.env.DEEPSEEK_API_KEY;
-  const model = import.meta.env.DEEPSEEK_MODEL || DEFAULT_MODEL;
-  const baseUrl = import.meta.env.DEEPSEEK_BASE_URL || DEFAULT_BASE_URL;
+module.exports = async function (context, req) {
+  const apiKey = process.env.DEEPSEEK_API_KEY;
+  const model = process.env.DEEPSEEK_MODEL || DEFAULT_MODEL;
+  const baseUrl = process.env.DEEPSEEK_BASE_URL || DEFAULT_BASE_URL;
 
   if (!apiKey) {
-    return new Response(
-      JSON.stringify({
+    return {
+      status: 500,
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
         error: "Missing DEEPSEEK_API_KEY environment variable."
-      }),
-      {
-        status: 500,
-        headers: { "Content-Type": "application/json" }
-      }
-    );
+      })
+    };
   }
 
-  let message = "";
-
-  try {
-    const body = await request.json();
-    message = typeof body.message === "string" ? body.message.trim() : "";
-  } catch {
-    return new Response(JSON.stringify({ error: "Invalid JSON body." }), {
-      status: 400,
-      headers: { "Content-Type": "application/json" }
-    });
-  }
+  const body = typeof req.body === "string" ? JSON.parse(req.body || "{}") : req.body || {};
+  const message = typeof body.message === "string" ? body.message.trim() : "";
 
   if (!message) {
-    return new Response(JSON.stringify({ error: "Message is required." }), {
+    return {
       status: 400,
-      headers: { "Content-Type": "application/json" }
-    });
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ error: "Message is required." })
+    };
   }
 
   if (message.length > 100) {
-    return new Response(
-      JSON.stringify({ error: "Message must be 100 characters or fewer." }),
-      {
-        status: 400,
-        headers: { "Content-Type": "application/json" }
-      }
-    );
+    return {
+      status: 400,
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ error: "Message must be 100 characters or fewer." })
+    };
   }
+
+  const knowledgeBasePath = path.join(__dirname, "..", "data", "chat-knowledge.txt");
+  const knowledgeBase = await fs.readFile(knowledgeBasePath, "utf8");
 
   const systemPrompt = [
     "You are Rogers Vizcaino speaking in first person on your portfolio site.",
@@ -88,33 +77,32 @@ export const POST: APIRoute = async ({ request }) => {
 
   if (!upstream.ok) {
     const errorText = await upstream.text();
-    return new Response(
-      JSON.stringify({
+    return {
+      status: 502,
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
         error: "DeepSeek request failed.",
         details: errorText
-      }),
-      {
-        status: 502,
-        headers: { "Content-Type": "application/json" }
-      }
-    );
+      })
+    };
   }
 
   const data = await upstream.json();
   const reply = data?.choices?.[0]?.message?.content?.trim();
 
   if (!reply) {
-    return new Response(
-      JSON.stringify({ error: "No response content returned by DeepSeek." }),
-      {
-        status: 502,
-        headers: { "Content-Type": "application/json" }
-      }
-    );
+    return {
+      status: 502,
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        error: "No response content returned by DeepSeek."
+      })
+    };
   }
 
-  return new Response(JSON.stringify({ reply }), {
+  return {
     status: 200,
-    headers: { "Content-Type": "application/json" }
-  });
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ reply })
+  };
 };

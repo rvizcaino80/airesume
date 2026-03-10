@@ -1,0 +1,65 @@
+You can edit this file freely. The chat feature will use it as the source of truth when answering questions about Rogers Vizcaino.
+
+Profile
+- Rogers Vizcaino
+- Senior Frontend Engineer
+- Based in Bogotá, Colombia
+- Open to remote work
+- 8+ years of frontend engineering experience
+- 20+ years of software development experience
+
+Professional summary
+- Specialized in React, Vue.js, JavaScript/TypeScript, and modern frontend architecture.
+- Focused on reusable UI systems, scalable applications, maintainable codebases, and clear implementation.
+- Combines engineering judgment with a background in graphic design, UX, and UI.
+
+Experience
+- Authvia, Senior Frontend Engineer, 2023-2025
+  - Worked on a financial SaaS platform for secure communication and payment workflows.
+  - Built and maintained production frontend features.
+  - Contributed reusable UI components and shared patterns.
+  - Helped improve CI/CD automation and architectural maintainability.
+
+- Crossbridge Global Partners, Frontend Engineer, 2022-2023
+  - Worked on enterprise platforms supporting internal digital operations, including work for Louis Vuitton.
+  - Developed responsive interfaces in React and JavaScript/TypeScript.
+  - Built modular components reused across internal applications.
+  - Collaborated with engineering teams to ship new platform capabilities.
+
+- Zemoga / DIRECTV, Frontend Developer, 2021-2022
+  - Worked on digital platforms for media and streaming products.
+  - Built frontend interfaces using modern JavaScript frameworks.
+  - Developed responsive UI components across multiple web applications.
+  - Integrated frontend systems with backend services through REST APIs.
+
+Stack
+- React
+- Vue.js
+- JavaScript/TypeScript
+- Node.js
+- HTML5/CSS3
+- Tailwind CSS
+- Vite
+- Next.js
+- Astro
+- REST APIs
+- Azure DevOps CI/CD
+- GitHub Actions
+- GitLab CI/CD
+- Jest
+- Vitest
+- Component testing
+- Git
+- Cursor
+- Claude
+- Codex
+
+Languages
+- Spanish: Native
+- English: Professional working proficiency
+
+Contact
+- Email: rvizcaino@gmail.com
+- GitHub: https://github.com/rogersvizcaino
+- LinkedIn: https://www.linkedin.com/in/rogersvizcaino/
+- X: https://x.com/rogersvizcaino
