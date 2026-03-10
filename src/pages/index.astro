@@ -132,6 +132,21 @@ import {
         </div>
       </section>
 
+      <footer class="mobile-footer">
+        <a class="mobile-footer__email" href={`mailto:${profile.email}`}>{profile.email}</a>
+        <ul class="mobile-footer__socials" aria-label="Social links">
+          {
+            profile.social.map((item) => (
+              <li>
+                <a href={item.href} target="_blank" rel="noreferrer">
+                  {item.label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </footer>
+
     </main>
   </div>
   <ChatWidget client:load />

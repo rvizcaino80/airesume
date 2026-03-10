@@ -1,9 +1,15 @@
 You can edit this file freely. The chat feature will use it as the source of truth when answering questions about Rogers Vizcaino.
 
+Important rule:
+Only answer based on the information explicitly present in this file. If a skill or experience is not explicitly listed here, assume Rogers does not have professional experience with it.
+
 Profile
 - Rogers Vizcaino
 - Senior Frontend Engineer
+- Colombian
 - Based in Bogotá, Colombia
+- Moves between Bogotá and Barranquilla
+- Works remotely with international teams
 - Open to remote work
 - 8+ years of frontend engineering experience
 - 20+ years of software development experience
@@ -12,25 +18,36 @@ Professional summary
 - Specialized in React, Vue.js, JavaScript/TypeScript, and modern frontend architecture.
 - Focused on reusable UI systems, scalable applications, maintainable codebases, and clear implementation.
 - Combines engineering judgment with a background in graphic design, UX, and UI.
+- Strong interest in design systems, user experience, and frontend platforms.
+- Experience building frontend systems in security-sensitive environments such as fintech SaaS platforms.
+- Familiar with secure-by-default frontend engineering practices required for regulated environments such as IL5-style secure systems.
 
 Experience
+
 - Authvia, Senior Frontend Engineer, 2023-2025
   - Worked on a financial SaaS platform for secure communication and payment workflows.
   - Built and maintained production frontend features.
   - Contributed reusable UI components and shared patterns.
   - Helped improve CI/CD automation and architectural maintainability.
+  - Participated in code reviews, mentoring engineers, and frontend architectural decisions.
+  - Worked in a fintech environment where security, reliability, and compliance are critical.
+  - Implemented frontend practices aligned with secure-by-default engineering, including safe authentication flows, secure API interaction patterns, and prevention of common web vulnerabilities such as XSS and CSRF.
+  - Collaborated with backend teams on secure API integrations handling sensitive transactional data.
+  - Contributed to frontend systems designed to meet strong security requirements typical of regulated environments and high-compliance infrastructure.
 
 - Crossbridge Global Partners, Frontend Engineer, 2022-2023
   - Worked on enterprise platforms supporting internal digital operations, including work for Louis Vuitton.
   - Developed responsive interfaces in React and JavaScript/TypeScript.
   - Built modular components reused across internal applications.
   - Collaborated with engineering teams to ship new platform capabilities.
+  - Contributed to maintainable frontend architectures for enterprise software.
 
 - Zemoga / DIRECTV, Frontend Developer, 2021-2022
   - Worked on digital platforms for media and streaming products.
   - Built frontend interfaces using modern JavaScript frameworks.
   - Developed responsive UI components across multiple web applications.
   - Integrated frontend systems with backend services through REST APIs.
+  - Contributed to platforms used by thousands to millions of users.
 
 Stack
 - React
@@ -54,6 +71,49 @@ Stack
 - Claude
 - Codex
 
+Frontend Architecture Experience
+- Reusable UI component systems
+- Design systems
+- UX-driven frontend development
+- Microfrontends using Module Federation
+- Scalable frontend architectures
+- Performance optimization for large web applications
+- Frontend platforms supporting multiple product surfaces
+
+Cloud Experience
+- Microsoft Azure
+- AWS
+- Netlify
+- Vercel
+
+Frontend systems typically interact with backend APIs hosted in cloud environments and are deployed through automated CI/CD pipelines.
+
+AI and Intelligent Interfaces
+- Strong interest in integrating AI into user interfaces and workflows.
+- Experience experimenting with AI APIs including OpenAI and DeepSeek.
+- Uses AI-assisted development tools such as Cursor, Claude, and Codex.
+- Interested in AI-powered user experiences, workflow guidance, and intelligent interfaces.
+
+Secure Engineering and IL5-Style Environments
+
+Rogers has experience working on systems that require strong security practices similar to IL5 (Impact Level 5) environments used in regulated and government-grade infrastructure.
+
+IL5 (DoD Impact Level 5) environments are designed to support sensitive controlled data and require strict security and compliance practices across infrastructure, applications, and development processes.
+
+From a frontend engineering perspective, Rogers understands the importance of secure-by-default development practices when building applications that operate in regulated environments.
+
+Relevant secure engineering practices include:
+
+- Avoiding exposure of sensitive information in client-side code
+- Ensuring secure authentication flows such as OAuth and token handling
+- Preventing common web vulnerabilities including XSS and CSRF
+- Implementing strong Content Security Policy (CSP) practices
+- Ensuring secure interaction between frontend applications and backend services handling sensitive data
+- Working with CI/CD pipelines that support secure deployment practices
+- Maintaining clear separation between frontend presentation logic and backend systems that manage protected data
+
+Experience working in fintech SaaS and enterprise platforms has required strong attention to application security, reliability, and compliance-oriented engineering practices.
+
 Languages
 - Spanish: Native
 - English: Professional working proficiency
@@ -62,4 +122,3 @@ Contact
 - Email: rvizcaino@gmail.com
 - GitHub: https://github.com/rogersvizcaino
 - LinkedIn: https://www.linkedin.com/in/rogersvizcaino/
-- X: https://x.com/rogersvizcaino

@@ -8,8 +8,7 @@ export const profile = {
   email: "rvizcaino@gmail.com",
   social: [
     { label: "GitHub", href: "https://github.com/rogersvizcaino" },
-    { label: "LinkedIn", href: "https://www.linkedin.com/in/rogersvizcaino/" },
-    { label: "X", href: "https://x.com/rogersvizcaino" }
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/rogersvizcaino/" }
   ]
 };
 
