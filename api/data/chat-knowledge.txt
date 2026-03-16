@@ -27,7 +27,7 @@ Experience
 - Authvia, Senior Frontend Engineer, 2023-2025
   - Worked on a financial SaaS platform for secure communication and payment workflows.
   - Built and maintained production frontend features.
-  - Contributed reusable UI components and shared patterns.
+  - Contributed reusable UI components, shared patterns, and microfrontend integrations using Module Federation.
   - Helped improve CI/CD automation and architectural maintainability.
   - Participated in code reviews, mentoring engineers, and frontend architectural decisions.
   - Worked in a fintech environment where security, reliability, and compliance are critical.

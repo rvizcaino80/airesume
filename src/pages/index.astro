@@ -12,7 +12,7 @@ import {
 ---
 
 <BaseLayout
-  title={`${profile.name} | ${profile.role}`}
+  title="Rogers Vizcaino - Senior Frontend Engineer"
   description={profile.intro.join(" ")}
 >
   <div class="page-shell">
@@ -50,6 +50,10 @@ import {
             ))
           }
         </ul>
+
+        <button class="export-button" type="button" data-export-resume>
+          Export Resume PDF
+        </button>
       </div>
     </aside>
 
@@ -152,4 +156,11 @@ import {
     </main>
   </div>
   <ChatWidget client:load />
+  <script is:inline>
+    const exportButton = document.querySelector("[data-export-resume]");
+
+    exportButton?.addEventListener("click", () => {
+      window.print();
+    });
+  </script>
 </BaseLayout>

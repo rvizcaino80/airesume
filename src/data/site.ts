@@ -38,7 +38,8 @@ export const stack = [
     items: [
       "Component-driven development",
       "Modular UI systems",
-      "Frontend platform architecture"
+      "Frontend platform architecture",
+      "Microfrontends with Module Federation"
     ]
   },
   {
@@ -47,7 +48,7 @@ export const stack = [
   },
   {
     category: "APIs",
-    items: ["REST APIs"]
+    items: ["REST APIs", "SQL databases (MySQL, Postgres)"]
   },
   {
     category: "DevOps",
@@ -87,12 +88,13 @@ export const experience = [
     title: "Senior Frontend Engineer",
     company: "Authvia",
     description:
-      "Worked on a financial SaaS platform focused on secure communication and payment workflows for financial institutions and regulated organizations. Built and maintained production frontend features, reusable UI components, and shared UI patterns used across multiple applications.\n\nContributed to frontend architecture and CI/CD workflows while collaborating with backend teams on secure API integrations handling sensitive financial data. Implemented frontend practices aligned with secure-by-default engineering, including safe authentication flows, secure API interaction patterns, and prevention of common web vulnerabilities such as XSS and CSRF.\n\nExperience in this fintech environment required strong attention to reliability, security, and compliance practices similar to those used in regulated infrastructures and IL-5-style secure systems.",
+      "Worked on a financial SaaS platform focused on secure communication and payment workflows for financial institutions and regulated organizations. Built and maintained production frontend features, reusable UI components, shared UI patterns used across multiple applications, and microfrontend integrations using Module Federation.\n\nContributed to frontend architecture and CI/CD workflows while collaborating with backend teams on secure API integrations handling sensitive financial data. Implemented frontend practices aligned with secure-by-default engineering, including safe authentication flows, secure API interaction patterns, and prevention of common web vulnerabilities such as XSS and CSRF.\n\nExperience in this fintech environment required strong attention to reliability, security, and compliance practices similar to those used in regulated infrastructures and IL-5-style secure systems.",
     tags: [
       "React",
       "JavaScript / TypeScript",
       "Azure DevOps",
       "UI Architecture",
+      "Module Federation",
       "Secure frontend practices"
     ]
   },
@@ -101,8 +103,8 @@ export const experience = [
     title: "Frontend Engineer",
     company: "Crossbridge Global Partners",
     description:
-      "Contributed to enterprise platforms supporting internal digital operations, including work for Louis Vuitton. Developed responsive interfaces in React and JavaScript/TypeScript, built modular components reused across internal applications, and collaborated with engineering teams to ship new platform capabilities.",
-    tags: ["React", "JavaScript/TypeScript", "Responsive UI", "Component Systems"]
+      "Contributed to enterprise platforms supporting internal digital operations, including work for Louis Vuitton. Developed responsive interfaces in React and JavaScript/TypeScript, built modular components reused across internal applications, collaborated with engineering teams to ship new platform capabilities, and worked with systems backed by SQL databases including MySQL and Postgres.",
+    tags: ["React", "JavaScript/TypeScript", "Responsive UI", "Component Systems", "MySQL", "Postgres"]
   },
   {
     period: "2021 - 2022",
@@ -118,8 +120,8 @@ export const highlights = [
   {
     name: "Financial SaaS Frontend Platform",
     description:
-      "Built and maintained production features for secure communication and payment workflows, contributed to reusable UI systems, and helped improve CI/CD automation and architectural consistency across multiple product interfaces.",
-    tags: ["React", "JavaScript/TypeScript", "Azure DevOps", "Modularity"]
+      "Built and maintained production features for secure communication and payment workflows, contributed to reusable UI systems, implemented microfrontend integrations with Module Federation, and helped improve CI/CD automation and architectural consistency across multiple product interfaces.",
+    tags: ["React", "JavaScript/TypeScript", "Azure DevOps", "Module Federation", "Modularity"]
   },
   {
     name: "Enterprise Internal Operations UI",
