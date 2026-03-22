@@ -15,11 +15,11 @@ Profile
 - 20+ years of software development experience
 
 Professional summary
-- Specialized in React, Vue.js, TypeScript, Tailwind CSS, and modern frontend architecture.
+- Specialized in React, Vue.js, TypeScript, Next.js, Tailwind CSS, and modern frontend architecture.
 - Focused on reusable UI systems, scalable applications, maintainable codebases, and clean implementation.
 - Combines engineering judgment with a background in graphic design, UX, and UI.
 - Strong interest in design systems, user experience, and frontend platforms.
-- Works effectively with autonomy, handles ambiguity well, and ships in fast-moving product environments.
+- Works effectively with autonomy, handles ambiguity well, communicates clearly, and ships in fast-moving product environments.
 
 Experience
 
@@ -28,10 +28,12 @@ Experience
   - Built and maintained the frontend in Vue.js and TypeScript.
   - Worked on a live product with active users, where frontend changes had to support real operational workflows.
   - Built and maintained production frontend features.
+  - Worked with frontend state management patterns and maintainable UI architecture.
   - Contributed reusable UI components, shared patterns, and microfrontend integrations using Module Federation.
   - Helped improve CI/CD automation and architectural maintainability.
   - Participated in code reviews, mentoring engineers, and frontend architectural decisions.
   - Collaborated with backend teams on API integrations handling product workflows and transactional data.
+  - Balanced implementation quality with performance, accessibility, and delivery needs in production.
 
 - Crossbridge Global Partners, Frontend Engineer, 2022-2023
   - Worked on enterprise platforms supporting internal digital operations, including work for Louis Vuitton.
@@ -54,27 +56,37 @@ Stack
 - JavaScript
 - Node.js
 - HTML5/CSS3
+- Next.js (App Router, SSR/SSG)
 - Tailwind CSS
 - Vite
-- Next.js
+- Inertia.js
 - Astro
 - REST APIs
+- React Query
+- Zustand
+- Redux
+- Pinia
 - Azure DevOps CI/CD
 - GitHub Actions
 - GitLab CI/CD
 - Jest
 - Vitest
+- React Testing Library
+- Playwright
+- Cypress
 - Component testing
+- Core Web Vitals
+- WCAG
 - Git
 - Cursor
 - Claude
 - Codex
 
 Target Role Alignment
-- Strong match for roles centered on Vue.js, TypeScript, Tailwind CSS, scalable frontend architecture, UX quality, and autonomous delivery.
-- Background aligns well with live product environments, maintainable UI systems, and complex user workflows.
-- Rogers does not have explicit professional experience with Inertia.js listed in this file.
-- Rogers can be presented as highly relevant for adjacent Vue.js product stacks, but direct Inertia.js experience should not be overstated.
+- Strong match for roles centered on React, Vue.js, TypeScript, Next.js, Tailwind CSS, scalable frontend architecture, UX quality, and autonomous delivery.
+- Background aligns well with live product environments, maintainable UI systems, backend API integration, and complex user workflows.
+- Relevant positioning includes state management, testing strategy, performance awareness, accessibility standards, and cloud-based delivery workflows.
+- Rogers can be presented as highly relevant for both React-heavy and Vue-heavy product stacks.
 
 Frontend Architecture Experience
 - Reusable UI component systems
@@ -84,6 +96,9 @@ Frontend Architecture Experience
 - Scalable frontend architectures
 - Performance optimization for large web applications
 - Frontend platforms supporting multiple product surfaces
+- CSS architecture
+- Accessibility-minded implementation
+- Collaboration with backend-for-frontend and API-driven systems
 
 Cloud Experience
 - Microsoft Azure
@@ -92,6 +107,12 @@ Cloud Experience
 - Vercel
 
 Frontend systems typically interact with backend APIs hosted in cloud environments and are deployed through automated CI/CD pipelines.
+
+Quality and Delivery
+- Experience with Jest and Vitest-based testing workflows.
+- Familiar with component testing and end-to-end oriented quality practices.
+- Strong attention to maintainability, delivery quality, and team collaboration.
+- Security-minded, especially in products where user data, platform reliability, and responsible implementation matter.
 
 AI and Intelligent Interfaces
 - Strong interest in integrating AI into user interfaces and workflows.

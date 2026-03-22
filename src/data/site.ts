@@ -3,7 +3,7 @@ export const profile = {
   role: "Senior Frontend Engineer",
   location: "Bogotá, Colombia",
   intro: [
-    "Senior Frontend Engineer with 8+ years of frontend engineering experience and 20+ years of software development experience, focused on scalable product UI with Vue.js, React, TypeScript, and Tailwind CSS."
+    "Senior Frontend Engineer with 8+ years of frontend engineering experience and 20+ years of software development experience, focused on scalable product UI with React, Vue.js, TypeScript, Next.js, and Tailwind CSS."
   ],
   email: "rvizcaino@gmail.com",
   social: [
@@ -13,9 +13,9 @@ export const profile = {
 };
 
 export const about = [
-  "I build frontend systems that turn product requirements into clear, scalable interfaces, with a focus on Vue.js, React, TypeScript, Tailwind CSS, reusable UI patterns, and maintainable architecture.",
+  "I build modern web applications that turn product requirements into clear, scalable interfaces, with a focus on React, Vue.js, TypeScript, Next.js, Tailwind CSS, reusable UI patterns, and maintainable architecture.",
   "I combine strong technical judgment with a background in graphic design, UX, and UI, which helps me create interfaces grounded in visual hierarchy, layout, spacing, typography, color, and design systems. I care about making complex workflows feel simple and usable.",
-  "Across SaaS, enterprise, and media products, I collaborate across component architecture, API integration, testing, and delivery workflows to ship stable user-facing systems. I work well autonomously, move comfortably through ambiguity, and keep delivery quality high without heavy supervision."
+  "Across SaaS, enterprise, and media products, I collaborate across component architecture, API integration, state management, testing, performance, accessibility, and delivery workflows to ship stable user-facing systems. I work well autonomously, move comfortably through ambiguity, communicate clearly, and collaborate closely with product and engineering teams."
 ];
 
 export const stack = [
@@ -27,6 +27,7 @@ export const stack = [
       "TypeScript",
       "JavaScript",
       "Node.js",
+      "Next.js",
       "HTML5 / CSS3",
       "User Experience",
       "User Interfaces",
@@ -42,16 +43,22 @@ export const stack = [
       "Modular UI systems",
       "Frontend platform architecture",
       "Microfrontends with Module Federation",
-      "Maintainable and scalable UI codebases"
+      "Maintainable and scalable UI codebases",
+      "CSS architecture",
+      "BFF-friendly frontend integration"
     ]
   },
   {
     category: "Additional",
-    items: ["Next.js (SSR / SSG)", "Astro (SSR / SSG)"]
+    items: ["Next.js (App Router, SSR / SSG)", "Astro (SSR / SSG)"]
   },
   {
     category: "APIs",
     items: ["REST APIs", "SQL databases (MySQL, Postgres)"]
+  },
+  {
+    category: "State Management",
+    items: ["React Query", "Zustand", "Redux", "Pinia"]
   },
   {
     category: "DevOps",
@@ -64,7 +71,18 @@ export const stack = [
   },
   {
     category: "Testing",
-    items: ["Jest", "Vitest", "Component testing"]
+    items: [
+      "Jest",
+      "Vitest",
+      "React Testing Library",
+      "Playwright",
+      "Cypress",
+      "Component testing"
+    ]
+  },
+  {
+    category: "Performance & Accessibility",
+    items: ["Core Web Vitals", "WCAG", "Accessible UI patterns"]
   },
   {
     category: "Version Control",
@@ -82,10 +100,11 @@ export const experience = [
     title: "Senior Frontend Engineer",
     company: "Authvia",
     description:
-      "Worked on a financial SaaS platform focused on communication and payment workflows for financial institutions and other organizations. Built and maintained production frontend features in Vue.js and TypeScript, reusable UI components, shared UI patterns used across multiple applications, and microfrontend integrations using Module Federation.\n\nContributed to frontend architecture and CI/CD workflows while collaborating with backend teams on API integrations and product delivery. Worked in a live product environment where new features had to support active users and complex operational workflows.",
+      "Worked on a financial SaaS platform focused on communication and payment workflows for financial institutions and other organizations. Built and maintained production frontend features in Vue.js and TypeScript, reusable UI components, shared UI patterns used across multiple applications, and microfrontend integrations using Module Federation.\n\nContributed to frontend architecture, state management patterns, and CI/CD workflows while collaborating with backend teams on API integrations and product delivery. Worked in a live product environment where new features had to support active users and complex operational workflows.\n\nThis work required clean implementation, thoughtful UX, strong communication, and close collaboration across engineering while maintaining quality, performance, accessibility, and reliability.",
     tags: [
       "Vue.js",
       "TypeScript",
+      "Pinia",
       "Tailwind CSS",
       "Azure DevOps",
       "UI Architecture",
