@@ -3,7 +3,7 @@ export const profile = {
   role: "Senior Frontend Engineer",
   location: "Bogotá, Colombia",
   intro: [
-    "Senior Frontend Engineer with 8+ years of frontend engineering experience and 20+ years of software development experience."
+    "Senior Frontend Engineer with 8+ years of frontend engineering experience and 20+ years of software development experience, focused on scalable product UI with Vue.js, React, TypeScript, and Tailwind CSS."
   ],
   email: "rvizcaino@gmail.com",
   social: [
@@ -13,10 +13,9 @@ export const profile = {
 };
 
 export const about = [
-  "I build frontend systems that turn product requirements into clear, scalable interfaces, with a focus on React, Vue.js, JavaScript/TypeScript, reusable UI patterns, and maintainable architecture.",
-  "I combine strong technical judgment with a background in graphic design, UX, and UI, which helps me create interfaces grounded in visual hierarchy, layout, spacing, typography, color, and design systems.",
-  "Across SaaS, enterprise, and media products, I collaborate across component architecture, API integration, testing, and delivery workflows to ship stable user-facing systems.",
-  "I also have experience working in security-sensitive environments where strong engineering practices are required. My frontend work follows secure-by-default principles such as safe authentication flows, secure API interaction patterns, and prevention of common web vulnerabilities. These practices align well with the standards expected in regulated infrastructures, including environments with IL-5-style security requirements."
+  "I build frontend systems that turn product requirements into clear, scalable interfaces, with a focus on Vue.js, React, TypeScript, Tailwind CSS, reusable UI patterns, and maintainable architecture.",
+  "I combine strong technical judgment with a background in graphic design, UX, and UI, which helps me create interfaces grounded in visual hierarchy, layout, spacing, typography, color, and design systems. I care about making complex workflows feel simple and usable.",
+  "Across SaaS, enterprise, and media products, I collaborate across component architecture, API integration, testing, and delivery workflows to ship stable user-facing systems. I work well autonomously, move comfortably through ambiguity, and keep delivery quality high without heavy supervision."
 ];
 
 export const stack = [
@@ -25,12 +24,15 @@ export const stack = [
     items: [
       "React",
       "Vue.js",
+      "TypeScript",
       "JavaScript",
-      "JavaScript/TypeScript",
       "Node.js",
       "HTML5 / CSS3",
+      "User Experience",
+      "User Interfaces",
       "Tailwind CSS",
-      "Vite"
+      "Vite",
+      "Inertia.js"
     ]
   },
   {
@@ -39,7 +41,8 @@ export const stack = [
       "Component-driven development",
       "Modular UI systems",
       "Frontend platform architecture",
-      "Microfrontends with Module Federation"
+      "Microfrontends with Module Federation",
+      "Maintainable and scalable UI codebases"
     ]
   },
   {
@@ -55,17 +58,8 @@ export const stack = [
     items: [
       "Azure DevOps CI/CD",
       "GitHub Actions",
-      "GitLab CI/CD"
-    ]
-  },
-  {
-    category: "Security & Compliance",
-    items: [
-      "Secure frontend engineering practices",
-      "IL5-aligned environments",
-      "Secure authentication flows",
-      "XSS / CSRF prevention",
-      "Content Security Policy (CSP)"
+      "GitLab CI/CD",
+      "Autonomous delivery in fast-moving teams"
     ]
   },
   {
@@ -88,14 +82,15 @@ export const experience = [
     title: "Senior Frontend Engineer",
     company: "Authvia",
     description:
-      "Worked on a financial SaaS platform focused on secure communication and payment workflows for financial institutions and regulated organizations. Built and maintained production frontend features, reusable UI components, shared UI patterns used across multiple applications, and microfrontend integrations using Module Federation.\n\nContributed to frontend architecture and CI/CD workflows while collaborating with backend teams on secure API integrations handling sensitive financial data. Implemented frontend practices aligned with secure-by-default engineering, including safe authentication flows, secure API interaction patterns, and prevention of common web vulnerabilities such as XSS and CSRF.\n\nExperience in this fintech environment required strong attention to reliability, security, and compliance practices similar to those used in regulated infrastructures and IL-5-style secure systems.",
+      "Worked on a financial SaaS platform focused on communication and payment workflows for financial institutions and other organizations. Built and maintained production frontend features in Vue.js and TypeScript, reusable UI components, shared UI patterns used across multiple applications, and microfrontend integrations using Module Federation.\n\nContributed to frontend architecture and CI/CD workflows while collaborating with backend teams on API integrations and product delivery. Worked in a live product environment where new features had to support active users and complex operational workflows.",
     tags: [
-      "React",
-      "JavaScript / TypeScript",
+      "Vue.js",
+      "TypeScript",
+      "Tailwind CSS",
       "Azure DevOps",
       "UI Architecture",
       "Module Federation",
-      "Secure frontend practices"
+      "Live product delivery"
     ]
   },
   {
@@ -103,8 +98,8 @@ export const experience = [
     title: "Frontend Engineer",
     company: "Crossbridge Global Partners",
     description:
-      "Contributed to enterprise platforms supporting internal digital operations, including work for Louis Vuitton. Developed responsive interfaces in React and JavaScript/TypeScript, built modular components reused across internal applications, collaborated with engineering teams to ship new platform capabilities, and worked with systems backed by SQL databases including MySQL and Postgres.",
-    tags: ["React", "JavaScript/TypeScript", "Responsive UI", "Component Systems", "MySQL", "Postgres"]
+      "Contributed to enterprise platforms supporting internal digital operations, including work for Louis Vuitton. Developed responsive interfaces in React and JavaScript/TypeScript, built modular components reused across internal applications, collaborated with engineering teams to ship new platform capabilities, and worked with systems backed by SQL databases including MySQL and Postgres.\n\nThis work required strong ownership, clean implementation, and the ability to move through evolving requirements while keeping the UI consistent and maintainable.",
+    tags: ["React", "JavaScript/TypeScript", "Responsive UI", "Component Systems", "MySQL", "Postgres", "Ownership"]
   },
   {
     period: "2021 - 2022",
@@ -120,8 +115,8 @@ export const highlights = [
   {
     name: "Financial SaaS Frontend Platform",
     description:
-      "Built and maintained production features for secure communication and payment workflows, contributed to reusable UI systems, implemented microfrontend integrations with Module Federation, and helped improve CI/CD automation and architectural consistency across multiple product interfaces.",
-    tags: ["React", "JavaScript/TypeScript", "Azure DevOps", "Module Federation", "Modularity"]
+      "Built and maintained production features for communication and payment workflows, contributed to reusable UI systems, implemented microfrontend integrations with Module Federation, and helped improve CI/CD automation and architectural consistency across multiple product interfaces used by active customers.",
+    tags: ["React", "JavaScript/TypeScript", "Azure DevOps", "Module Federation", "Modularity", "Production UX"]
   },
   {
     name: "Enterprise Internal Operations UI",

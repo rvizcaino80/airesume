@@ -1,9 +1,0 @@
-{
-  "IsEncrypted": false,
-  "Values": {
-    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
-    "FUNCTIONS_WORKER_RUNTIME": "node",
-    "DEEPSEEK_API_KEY": "sk-d941f099cbca4ea49703b8ddf1b0f06c",
-    "DEEPSEEK_MODEL": "deepseek-chat"
-  }
-}
