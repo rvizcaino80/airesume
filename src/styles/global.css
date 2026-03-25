@@ -121,6 +121,39 @@ h2 {
   flex-direction: column;
 }
 
+.language-switch {
+  display: inline-flex;
+  gap: 0.4rem;
+  margin-bottom: 1.5rem;
+  padding: 0.35rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(41, 37, 36, 0.5);
+  width: fit-content;
+}
+
+.language-switch__button {
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  padding: 0.45rem 0.8rem;
+  cursor: pointer;
+  transition:
+    color 180ms ease,
+    background-color 180ms ease;
+}
+
+.language-switch__button.is-active {
+  background: rgba(245, 245, 244, 0.94);
+  color: #1c1917;
+}
+
+.language-switch__button:hover,
+.language-switch__button:focus-visible {
+  color: var(--text);
+}
+
 .brand {
   font-size: clamp(1.8rem, 3.4vw, 2.7rem);
   line-height: 0.95;
@@ -129,7 +162,7 @@ h2 {
 }
 
 .role {
-  margin-top: 1.15rem;
+  margin-top: 0.6rem;
   font-size: 1.32rem;
   color: rgba(250, 250, 249, 0.96);
 }
@@ -195,7 +228,7 @@ h2 {
   display: flex;
   gap: 1rem;
   padding: 0;
-  margin: 1.1rem 0 0;
+  margin: 0.45rem 0 0;
 }
 
 .social-list a {
@@ -222,24 +255,27 @@ h2 {
 
 .export-button {
   width: fit-content;
-  margin-top: 1.75rem;
-  padding: 0.85rem 1.1rem;
-  border: 1px solid var(--line);
+  margin-top: 1.25rem;
+  padding: 0.58rem 0.88rem;
+  border: 1px solid #f0d57a;
   border-radius: 999px;
-  background: rgba(245, 245, 244, 0.94);
-  color: #1c1917;
+  background: #f0d57a;
+  color: #2a2110;
+  font-size: 0.9rem;
   cursor: pointer;
   transition:
     transform 180ms ease,
     box-shadow 180ms ease,
-    background-color 180ms ease;
+    background-color 180ms ease,
+    border-color 180ms ease;
 }
 
 .export-button:hover,
 .export-button:focus-visible {
   transform: translateY(-1px);
   box-shadow: var(--shadow);
-  background: #ffffff;
+  background: #f6df95;
+  border-color: #f6df95;
 }
 
 .mobile-footer {
@@ -257,6 +293,28 @@ h2 {
 
 .section + .section {
   margin-top: 7rem;
+}
+
+@media (max-width: 900px) {
+  .page-shell {
+    grid-template-columns: 1fr;
+    gap: 0;
+    width: min(calc(100% - 2rem), var(--max-width));
+  }
+
+  .sidebar__inner {
+    position: static;
+    min-height: auto;
+    padding: 2rem 0 1rem;
+  }
+
+  .content {
+    padding: 2rem 0 5rem;
+  }
+
+  .language-switch {
+    margin-bottom: 1.2rem;
+  }
 }
 
 .eyebrow {

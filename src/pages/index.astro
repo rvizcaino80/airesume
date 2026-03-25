@@ -1,47 +1,52 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import ChatWidget from "../components/ChatWidget";
-import {
-  about,
-  experience,
-  highlights,
-  languages,
-  profile,
-  stack
-} from "../data/site";
+import { defaultLanguage, siteContent } from "../data/site";
+
+const content = siteContent[defaultLanguage];
 ---
 
 <BaseLayout
-  title="Rogers Vizcaino - Senior Frontend Engineer"
-  description={profile.intro.join(" ")}
+  title={content.meta.title}
+  description={content.profile.intro.join(" ")}
 >
   <div class="page-shell">
     <aside class="sidebar">
       <div class="sidebar__inner">
-        <a class="brand" href="#top">{profile.name}</a>
-        <p class="role">{profile.role}</p>
-        <p class="location">{profile.location}</p>
-        <p class="availability availability--sidebar">
-          <span class="availability-dot" aria-hidden="true"></span>
-          Open to work (Remote)
-        </p>
-        <div class="intro">
-          {profile.intro.map((paragraph) => <p>{paragraph}</p>)}
+        <div class="language-switch" role="group" aria-label="Language switch">
+          <button class="language-switch__button is-active" type="button" data-language-button data-language="en">
+            English
+          </button>
+          <button class="language-switch__button" type="button" data-language-button data-language="es">
+            Español
+          </button>
         </div>
 
-        <nav class="section-nav" aria-label="Primary">
-          <a href="#about">About</a>
-          <a href="#stack">Stack</a>
-          <a href="#experience">Experience</a>
-          <a href="#highlights">Highlights</a>
-          <a href="#languages">Languages</a>
+        <a class="brand" href="#top" data-profile-name>{content.profile.name}</a>
+        <p class="role" data-profile-role>{content.profile.role}</p>
+        <p class="location" data-profile-location>{content.profile.location}</p>
+        <p class="availability availability--sidebar">
+          <span class="availability-dot" aria-hidden="true"></span>
+          <span data-label-availability>{content.labels.availability}</span>
+        </p>
+        <div class="intro" data-profile-intro>
+          {content.profile.intro.map((paragraph) => <p>{paragraph}</p>)}
+        </div>
+
+        <nav class="section-nav" data-nav aria-label={content.labels.navAria}>
+          <a href="#about" data-nav-about>{content.labels.about}</a>
+          <a href="#stack" data-nav-stack>{content.labels.stack}</a>
+          <a href="#experience" data-nav-experience>{content.labels.experience}</a>
+          <a href="#languages" data-nav-languages>{content.labels.languages}</a>
         </nav>
 
-        <a class="sidebar-email" href={`mailto:${profile.email}`}>{profile.email}</a>
+        <a class="sidebar-email" href={`mailto:${content.profile.email}`} data-profile-email>
+          {content.profile.email}
+        </a>
 
-        <ul class="social-list" aria-label="Social links">
+        <ul class="social-list" aria-label={content.labels.socialAria} data-social-list>
           {
-            profile.social.map((item) => (
+            content.profile.social.map((item) => (
               <li>
                 <a href={item.href} target="_blank" rel="noreferrer">
                   {item.label}
@@ -52,24 +57,24 @@ import {
         </ul>
 
         <button class="export-button" type="button" data-export-resume>
-          Export Resume PDF
+          <span data-label-export>{content.labels.exportResume}</span>
         </button>
       </div>
     </aside>
 
     <main class="content" id="top">
       <section class="section" id="about">
-        <span class="eyebrow">About</span>
-        <div class="copy-stack">
-          {about.map((paragraph) => <p>{paragraph}</p>)}
+        <span class="eyebrow" data-label-about>{content.labels.about}</span>
+        <div class="copy-stack" data-about>
+          {content.about.map((paragraph) => <p>{paragraph}</p>)}
         </div>
       </section>
 
       <section class="section" id="stack">
-        <span class="eyebrow">Stack</span>
-        <div class="stack-grid">
+        <span class="eyebrow" data-label-stack>{content.labels.stack}</span>
+        <div class="stack-grid" data-stack>
           {
-            stack.map((group) => (
+            content.stack.map((group) => (
               <article class="stack-card">
                 <h2>{group.category}</h2>
                 <ul class="tag-list">
@@ -82,10 +87,10 @@ import {
       </section>
 
       <section class="section" id="experience">
-        <span class="eyebrow">Experience</span>
-        <div class="card-stack">
+        <span class="eyebrow" data-label-experience>{content.labels.experience}</span>
+        <div class="card-stack" data-experience>
           {
-            experience.map((item) => (
+            content.experience.map((item) => (
               <article class="entry-card">
                 <p class="meta">{item.period}</p>
                 <div class="entry-card__body">
@@ -105,30 +110,11 @@ import {
         </div>
       </section>
 
-      <section class="section" id="highlights">
-        <span class="eyebrow">Highlights</span>
-        <div class="card-stack">
-          {
-            highlights.map((item) => (
-              <article class="entry-card entry-card--link">
-                <div class="entry-card__body">
-                  <h2>{item.name}</h2>
-                  <p>{item.description}</p>
-                  <ul class="tag-list">
-                    {item.tags.map((tag) => <li>{tag}</li>)}
-                  </ul>
-                </div>
-              </article>
-            ))
-          }
-        </div>
-      </section>
-
       <section class="section" id="languages">
-        <span class="eyebrow">Languages</span>
-        <div class="languages-list">
+        <span class="eyebrow" data-label-languages>{content.labels.languages}</span>
+        <div class="languages-list" data-languages>
           {
-            languages.map((language) => (
+            content.languages.map((language) => (
               <article class="language-row">
                 <h2>{language.name}</h2>
                 <p>{language.level}</p>
@@ -139,10 +125,12 @@ import {
       </section>
 
       <footer class="mobile-footer">
-        <a class="mobile-footer__email" href={`mailto:${profile.email}`}>{profile.email}</a>
-        <ul class="mobile-footer__socials" aria-label="Social links">
+        <a class="mobile-footer__email" href={`mailto:${content.profile.email}`} data-mobile-email>
+          {content.profile.email}
+        </a>
+        <ul class="mobile-footer__socials" aria-label={content.labels.socialAria} data-mobile-socials>
           {
-            profile.social.map((item) => (
+            content.profile.social.map((item) => (
               <li>
                 <a href={item.href} target="_blank" rel="noreferrer">
                   {item.label}
@@ -152,12 +140,131 @@ import {
           }
         </ul>
       </footer>
-
     </main>
   </div>
   <ChatWidget client:load />
-  <script is:inline>
+  <script is:inline define:vars={{ siteContent, defaultLanguage }}>
     const exportButton = document.querySelector("[data-export-resume]");
+    const languageButtons = Array.from(document.querySelectorAll("[data-language-button]"));
+    const brand = document.querySelector("[data-profile-name]");
+    const role = document.querySelector("[data-profile-role]");
+    const location = document.querySelector("[data-profile-location]");
+    const availability = document.querySelector("[data-label-availability]");
+    const intro = document.querySelector("[data-profile-intro]");
+    const nav = document.querySelector("[data-nav]");
+    const navAbout = document.querySelector("[data-nav-about]");
+    const navStack = document.querySelector("[data-nav-stack]");
+    const navExperience = document.querySelector("[data-nav-experience]");
+    const navLanguages = document.querySelector("[data-nav-languages]");
+    const email = document.querySelector("[data-profile-email]");
+    const exportLabel = document.querySelector("[data-label-export]");
+    const aboutLabel = document.querySelector("[data-label-about]");
+    const stackLabel = document.querySelector("[data-label-stack]");
+    const experienceLabel = document.querySelector("[data-label-experience]");
+    const languagesLabel = document.querySelector("[data-label-languages]");
+    const about = document.querySelector("[data-about]");
+    const stack = document.querySelector("[data-stack]");
+    const experience = document.querySelector("[data-experience]");
+    const languages = document.querySelector("[data-languages]");
+    const socialList = document.querySelector("[data-social-list]");
+    const mobileEmail = document.querySelector("[data-mobile-email]");
+    const mobileSocials = document.querySelector("[data-mobile-socials]");
+
+    const renderParagraphs = (container, paragraphs) => {
+      if (!container) return;
+      container.innerHTML = paragraphs.map((paragraph) => `<p>${paragraph}</p>`).join("");
+    };
+
+    const renderTagList = (items) => `<ul class="tag-list">${items.map((item) => `<li>${item}</li>`).join("")}</ul>`;
+
+    const renderSocials = (container, items) => {
+      if (!container) return;
+      container.innerHTML = items
+        .map(
+          (item) =>
+            `<li><a href="${item.href}" target="_blank" rel="noreferrer">${item.label}</a></li>`
+        )
+        .join("");
+    };
+
+    const applyLanguage = (language) => {
+      const next = siteContent[language] || siteContent[defaultLanguage];
+
+      document.documentElement.lang = language === "es" ? "es" : "en";
+      document.title = next.meta.title;
+
+      brand.textContent = next.profile.name;
+      role.textContent = next.profile.role;
+      location.textContent = next.profile.location;
+      availability.textContent = next.labels.availability;
+      renderParagraphs(intro, next.profile.intro);
+
+      nav?.setAttribute("aria-label", next.labels.navAria);
+      navAbout.textContent = next.labels.about;
+      navStack.textContent = next.labels.stack;
+      navExperience.textContent = next.labels.experience;
+      navLanguages.textContent = next.labels.languages;
+
+      email.textContent = next.profile.email;
+      email.setAttribute("href", `mailto:${next.profile.email}`);
+      mobileEmail.textContent = next.profile.email;
+      mobileEmail.setAttribute("href", `mailto:${next.profile.email}`);
+
+      socialList?.setAttribute("aria-label", next.labels.socialAria);
+      mobileSocials?.setAttribute("aria-label", next.labels.socialAria);
+      renderSocials(socialList, next.profile.social);
+      renderSocials(mobileSocials, next.profile.social);
+
+      exportLabel.textContent = next.labels.exportResume;
+      aboutLabel.textContent = next.labels.about;
+      stackLabel.textContent = next.labels.stack;
+      experienceLabel.textContent = next.labels.experience;
+      languagesLabel.textContent = next.labels.languages;
+
+      renderParagraphs(about, next.about);
+
+      stack.innerHTML = next.stack
+        .map(
+          (group) =>
+            `<article class="stack-card"><h2>${group.category}</h2>${renderTagList(group.items)}</article>`
+        )
+        .join("");
+
+      experience.innerHTML = next.experience
+        .map((item) => {
+          const paragraphs = item.description
+            .split("\\n\\n")
+            .map((paragraph) => `<p>${paragraph}</p>`)
+            .join("");
+
+          return `<article class="entry-card"><p class="meta">${item.period}</p><div class="entry-card__body"><h2>${item.title} <span>@ ${item.company}</span></h2><div class="entry-copy">${paragraphs}</div>${renderTagList(item.tags)}</div></article>`;
+        })
+        .join("");
+
+      languages.innerHTML = next.languages
+        .map(
+          (languageItem) =>
+            `<article class="language-row"><h2>${languageItem.name}</h2><p>${languageItem.level}</p></article>`
+        )
+        .join("");
+
+      languageButtons.forEach((button) => {
+        const isActive = button.dataset.language === language;
+        button.classList.toggle("is-active", isActive);
+        button.setAttribute("aria-pressed", isActive ? "true" : "false");
+      });
+
+      localStorage.setItem("resume-language", language);
+    };
+
+    const initialLanguage = localStorage.getItem("resume-language") || defaultLanguage;
+    applyLanguage(initialLanguage);
+
+    languageButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        applyLanguage(button.dataset.language || defaultLanguage);
+      });
+    });
 
     exportButton?.addEventListener("click", () => {
       window.print();

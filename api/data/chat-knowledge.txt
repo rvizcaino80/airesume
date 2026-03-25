@@ -5,120 +5,102 @@ Only answer based on the information explicitly present in this file. If a skill
 
 Profile
 - Rogers Vizcaino
-- Senior Frontend Engineer
+- Product Engineer
+- Software engineer oriented to product delivery
 - Colombian
 - Based in Bogotá, Colombia
 - Moves between Bogotá and Barranquilla
 - Works remotely with international teams
 - Open to remote work
-- 8+ years of frontend engineering experience
+- 8+ years of professional experience building web applications
 - 20+ years of software development experience
 
 Professional summary
-- Specialized in React, Vue.js, TypeScript, Next.js, Tailwind CSS, and modern frontend architecture.
-- Focused on reusable UI systems, scalable applications, maintainable codebases, and clean implementation.
+- Rogers is positioned as a product-oriented software engineer, not as a narrow frontend specialist.
+- Strongest in web products spanning interfaces, application architecture, API integration, testing, delivery, and product execution.
+- Specialized in React, Vue.js, TypeScript, Next.js, Node.js, Tailwind CSS, and modern web application development.
 - Combines engineering judgment with a background in graphic design, UX, and UI.
-- Strong interest in design systems, user experience, and frontend platforms.
-- Works effectively with autonomy, handles ambiguity well, communicates clearly, and ships in fast-moving product environments.
+- Works effectively with autonomy, handles ambiguity well, communicates clearly, and collaborates closely with product and engineering teams.
+- Uses AI as a practical multiplier for implementation, research, prototyping, iteration, and maintenance.
+
+Working style
+- Rogers prefers roles with broad product ownership rather than narrow specialization.
+- He works comfortably across UI, architecture, integration, testing, and delivery workflows.
+- He is motivated by turning ambiguous product needs into working software.
+- He is comfortable using AI tools to accelerate delivery while keeping engineering judgment and accountability.
 
 Experience
 
-- Authvia, Senior Frontend Engineer, 2023-2025
-  - Worked on a financial SaaS platform for communication and payment workflows.
-  - Built and maintained the frontend in Vue.js and TypeScript.
-  - Worked on a live product with active users, where frontend changes had to support real operational workflows.
-  - Built and maintained production frontend features.
-  - Worked with frontend state management patterns and maintainable UI architecture.
-  - Contributed reusable UI components, shared patterns, and microfrontend integrations using Module Federation.
-  - Helped improve CI/CD automation and architectural maintainability.
-  - Participated in code reviews, mentoring engineers, and frontend architectural decisions.
-  - Collaborated with backend teams on API integrations handling product workflows and transactional data.
-  - Balanced implementation quality with performance, accessibility, and delivery needs in production.
+- Authvia, Product Engineer, 2023-2025
+  - Worked on a live financial SaaS platform with active users.
+  - Built and evolved production product workflows in Vue.js and TypeScript.
+  - Contributed reusable application patterns, shared UI systems, and cross-application integrations.
+  - Collaborated closely with backend teams on API integrations, delivery workflows, and product execution.
+  - Participated in architecture, integration, quality, and shipping decisions, not just interface implementation.
+  - Worked in an environment that required autonomy, strong communication, thoughtful UX, and reliable execution in production.
+  - Highlight: Built and evolved production workflows for a financial SaaS product with active users, contributing reusable systems, integration patterns, and architectural consistency across multiple application surfaces.
 
-- Crossbridge Global Partners, Frontend Engineer, 2022-2023
-  - Worked on enterprise platforms supporting internal digital operations, including work for Louis Vuitton.
-  - Developed responsive interfaces in React and JavaScript/TypeScript.
-  - Built modular components reused across internal applications.
-  - Collaborated with engineering teams to ship new platform capabilities.
-  - Contributed to maintainable frontend architectures for enterprise software.
+- Crossbridge Global Partners, Software Engineer, 2022-2023
+  - Worked on enterprise software platforms supporting internal digital operations, including work for Louis Vuitton.
+  - Built product interfaces in React and TypeScript.
+  - Developed reusable component systems and application capabilities tied to business workflows.
+  - Worked with systems backed by SQL databases including MySQL and Postgres.
+  - Contributed in contexts that required ownership, collaboration, and maintainable implementation.
+  - Highlight: Delivered maintainable application interfaces and reusable patterns for internal enterprise platforms, helping product workflows stay clearer, faster, and more consistent across teams.
 
-- Zemoga / DIRECTV, Frontend Developer, 2021-2022
-  - Worked on digital platforms for media and streaming products.
-  - Built frontend interfaces using modern JavaScript frameworks.
-  - Developed responsive UI components across multiple web applications.
-  - Integrated frontend systems with backend services through REST APIs.
-  - Contributed to platforms used by thousands to millions of users.
+- Zemoga / DIRECTV, Software Developer, 2021-2022
+  - Worked on digital media and streaming products.
+  - Built web application features, reusable interface components, and API-connected experiences used at scale.
+  - Contributed across implementation, integration, and product delivery for multiple web surfaces.
+  - Highlight: Shipped reusable web application features and API-connected experiences for media products operating across multiple surfaces and high-traffic user flows.
 
-Stack
+Capabilities
+- Product engineering
+- Software delivery
+- Application architecture
+- API integration
 - React
 - Vue.js
 - TypeScript
 - JavaScript
 - Node.js
-- HTML5/CSS3
-- Next.js (App Router, SSR/SSG)
+- Next.js
+- Inertia.js
 - Tailwind CSS
 - Vite
-- Inertia.js
-- Astro
 - REST APIs
+- SQL databases
 - React Query
 - Zustand
 - Redux
 - Pinia
-- Azure DevOps CI/CD
-- GitHub Actions
-- GitLab CI/CD
 - Jest
 - Vitest
 - React Testing Library
 - Playwright
 - Cypress
-- Component testing
 - Core Web Vitals
 - WCAG
-- Git
-- Cursor
-- Claude
-- Codex
-
-Target Role Alignment
-- Strong match for roles centered on React, Vue.js, TypeScript, Next.js, Tailwind CSS, scalable frontend architecture, UX quality, and autonomous delivery.
-- Background aligns well with live product environments, maintainable UI systems, backend API integration, and complex user workflows.
-- Relevant positioning includes state management, testing strategy, performance awareness, accessibility standards, and cloud-based delivery workflows.
-- Rogers can be presented as highly relevant for both React-heavy and Vue-heavy product stacks.
-
-Frontend Architecture Experience
-- Reusable UI component systems
-- Design systems
-- UX-driven frontend development
-- Microfrontends using Module Federation
-- Scalable frontend architectures
-- Performance optimization for large web applications
-- Frontend platforms supporting multiple product surfaces
-- CSS architecture
-- Accessibility-minded implementation
-- Collaboration with backend-for-frontend and API-driven systems
-
-Cloud Experience
-- Microsoft Azure
+- GitHub Actions
+- GitLab CI/CD
+- Azure DevOps
+- Azure
 - AWS
 - Netlify
 - Vercel
 
-Frontend systems typically interact with backend APIs hosted in cloud environments and are deployed through automated CI/CD pipelines.
+Product and architecture strengths
+- Turns product requirements into working software systems.
+- Balances UX, technical quality, maintainability, and delivery speed.
+- Comfortable with reusable systems, application patterns, and scalable web architectures.
+- Has experience with API-driven systems, state management, testing workflows, and CI/CD delivery practices.
+- Can be positioned for roles that need broad engineering leverage across product surfaces.
 
-Quality and Delivery
-- Experience with Jest and Vitest-based testing workflows.
-- Familiar with component testing and end-to-end oriented quality practices.
-- Strong attention to maintainability, delivery quality, and team collaboration.
-- Security-minded, especially in products where user data, platform reliability, and responsible implementation matter.
-
-AI and Intelligent Interfaces
-- Strong interest in integrating AI into user interfaces and workflows.
-- Experience experimenting with AI APIs including OpenAI and DeepSeek.
+AI-assisted development
 - Uses AI-assisted development tools such as Cursor, Claude, and Codex.
-- Interested in AI-powered user experiences, workflow guidance, and intelligent interfaces.
+- Strong interest in AI-powered workflows and intelligent interfaces.
+- Uses AI tools as part of implementation, research, prototyping, and iteration.
+- Sees AI as a multiplier for a generalist software engineer rather than as a replacement for engineering judgment.
 
 Languages
 - Spanish: Native
@@ -134,9 +116,9 @@ Current rate
 Availability
 - Remote work with international teams
 - Contract or freelance engagements
-- Frontend engineering, UI architecture, and scalable UI systems
-- Design systems and modern frontend platforms
-- AI-assisted product interfaces and modern frontend workflows
+- Product engineering and software delivery
+- Web application architecture and scalable systems
+- AI-assisted product workflows and modern development processes
 
 Time zone
 - Based in Colombia (UTC -5)
