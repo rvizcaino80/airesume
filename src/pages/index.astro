@@ -24,7 +24,6 @@ const content = siteContent[defaultLanguage];
 
         <a class="brand" href="#top" data-profile-name>{content.profile.name}</a>
         <p class="role" data-profile-role>{content.profile.role}</p>
-        <p class="location" data-profile-location>{content.profile.location}</p>
         <p class="availability availability--sidebar">
           <span class="availability-dot" aria-hidden="true"></span>
           <span data-label-availability>{content.labels.availability}</span>
@@ -56,7 +55,11 @@ const content = siteContent[defaultLanguage];
           }
         </ul>
 
-        <button class="export-button" type="button" data-export-resume>
+        <button
+          class="export-button relative z-[21] mt-5 w-fit cursor-pointer appearance-none rounded-full border border-amber-300 bg-amber-300 px-[0.88rem] py-[0.58rem] text-[0.9rem] font-semibold leading-none text-black transition hover:-translate-y-[1px] hover:border-amber-400 hover:bg-amber-400 focus-visible:-translate-y-[1px] focus-visible:border-amber-400 focus-visible:bg-amber-400 focus-visible:outline-none"
+          type="button"
+          data-export-resume
+        >
           <span data-label-export>{content.labels.exportResume}</span>
         </button>
       </div>
@@ -64,14 +67,14 @@ const content = siteContent[defaultLanguage];
 
     <main class="content" id="top">
       <section class="section" id="about">
-        <span class="eyebrow" data-label-about>{content.labels.about}</span>
+        <span class="eyebrow eyebrow--about" data-label-about>{content.labels.about}</span>
         <div class="copy-stack" data-about>
           {content.about.map((paragraph) => <p>{paragraph}</p>)}
         </div>
       </section>
 
       <section class="section" id="stack">
-        <span class="eyebrow" data-label-stack>{content.labels.stack}</span>
+        <span class="eyebrow eyebrow--stack" data-label-stack>{content.labels.stack}</span>
         <div class="stack-grid" data-stack>
           {
             content.stack.map((group) => (
@@ -87,7 +90,7 @@ const content = siteContent[defaultLanguage];
       </section>
 
       <section class="section" id="experience">
-        <span class="eyebrow" data-label-experience>{content.labels.experience}</span>
+        <span class="eyebrow eyebrow--experience" data-label-experience>{content.labels.experience}</span>
         <div class="card-stack" data-experience>
           {
             content.experience.map((item) => (
@@ -111,7 +114,7 @@ const content = siteContent[defaultLanguage];
       </section>
 
       <section class="section" id="languages">
-        <span class="eyebrow" data-label-languages>{content.labels.languages}</span>
+        <span class="eyebrow eyebrow--languages" data-label-languages>{content.labels.languages}</span>
         <div class="languages-list" data-languages>
           {
             content.languages.map((language) => (
@@ -146,9 +149,9 @@ const content = siteContent[defaultLanguage];
   <script is:inline define:vars={{ siteContent, defaultLanguage }}>
     const exportButton = document.querySelector("[data-export-resume]");
     const languageButtons = Array.from(document.querySelectorAll("[data-language-button]"));
+    const languageSwitch = document.querySelector(".language-switch");
     const brand = document.querySelector("[data-profile-name]");
     const role = document.querySelector("[data-profile-role]");
-    const location = document.querySelector("[data-profile-location]");
     const availability = document.querySelector("[data-label-availability]");
     const intro = document.querySelector("[data-profile-intro]");
     const nav = document.querySelector("[data-nav]");
@@ -187,6 +190,19 @@ const content = siteContent[defaultLanguage];
         .join("");
     };
 
+    const updateLanguageSwitchIndicator = (activeLanguage) => {
+      if (!languageSwitch) return;
+
+      const activeButton = languageButtons.find((button) => button.dataset.language === activeLanguage);
+
+      if (!activeButton) return;
+
+      languageSwitch.style.setProperty("--switch-pill-x", `${activeButton.offsetLeft}px`);
+      languageSwitch.style.setProperty("--switch-pill-y", `${activeButton.offsetTop}px`);
+      languageSwitch.style.setProperty("--switch-pill-w", `${activeButton.offsetWidth}px`);
+      languageSwitch.style.setProperty("--switch-pill-h", `${activeButton.offsetHeight}px`);
+    };
+
     const applyLanguage = (language) => {
       const next = siteContent[language] || siteContent[defaultLanguage];
 
@@ -195,7 +211,6 @@ const content = siteContent[defaultLanguage];
 
       brand.textContent = next.profile.name;
       role.textContent = next.profile.role;
-      location.textContent = next.profile.location;
       availability.textContent = next.labels.availability;
       renderParagraphs(intro, next.profile.intro);
 
@@ -254,11 +269,17 @@ const content = siteContent[defaultLanguage];
         button.setAttribute("aria-pressed", isActive ? "true" : "false");
       });
 
+      updateLanguageSwitchIndicator(language);
       localStorage.setItem("resume-language", language);
     };
 
     const initialLanguage = localStorage.getItem("resume-language") || defaultLanguage;
     applyLanguage(initialLanguage);
+
+    window.addEventListener("resize", () => {
+      const activeLanguage = languageButtons.find((button) => button.classList.contains("is-active"))?.dataset.language;
+      updateLanguageSwitchIndicator(activeLanguage === "es" ? "es" : defaultLanguage);
+    });
 
     languageButtons.forEach((button) => {
       button.addEventListener("click", () => {

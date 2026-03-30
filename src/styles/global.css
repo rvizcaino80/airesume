@@ -1,3 +1,4 @@
+@import "tailwindcss";
 @import "@fontsource/vend-sans/latin-400.css";
 @import "@fontsource/vend-sans/latin-600.css";
 @import "@fontsource/vend-sans/latin-700.css";
@@ -115,6 +116,7 @@ h2 {
 .sidebar__inner {
   position: sticky;
   top: 0;
+  z-index: 21;
   min-height: 100vh;
   padding: 6rem 0 4rem;
   display: flex;
@@ -130,9 +132,31 @@ h2 {
   border-radius: 999px;
   background: rgba(41, 37, 36, 0.5);
   width: fit-content;
+  position: relative;
+  isolation: isolate;
+}
+
+.language-switch::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  border-radius: 999px;
+  background: rgba(245, 245, 244, 0.94);
+  transition:
+    transform 220ms cubic-bezier(0.16, 1, 0.3, 1),
+    width 220ms cubic-bezier(0.16, 1, 0.3, 1),
+    height 220ms cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, width, height;
+  width: var(--switch-pill-w, 0);
+  height: var(--switch-pill-h, 0);
+  transform: translate3d(var(--switch-pill-x, 0), var(--switch-pill-y, 0), 0);
 }
 
 .language-switch__button {
+  position: relative;
+  z-index: 1;
   border: 0;
   border-radius: 999px;
   background: transparent;
@@ -145,12 +169,11 @@ h2 {
 }
 
 .language-switch__button.is-active {
-  background: rgba(245, 245, 244, 0.94);
   color: #1c1917;
 }
 
-.language-switch__button:hover,
-.language-switch__button:focus-visible {
+.language-switch__button:not(.is-active):hover,
+.language-switch__button:not(.is-active):focus-visible {
   color: var(--text);
 }
 
@@ -169,9 +192,9 @@ h2 {
 
 .intro {
   margin-top: 1rem;
-  max-width: 20rem;
-  line-height: 1.65;
-  font-size: 1.05rem;
+  max-width: 21rem;
+  line-height: 1.68;
+  font-size: 1.1rem;
   color: var(--muted);
 }
 
@@ -253,31 +276,6 @@ h2 {
   color: var(--accent);
 }
 
-.export-button {
-  width: fit-content;
-  margin-top: 1.25rem;
-  padding: 0.58rem 0.88rem;
-  border: 1px solid #f0d57a;
-  border-radius: 999px;
-  background: #f0d57a;
-  color: #2a2110;
-  font-size: 0.9rem;
-  cursor: pointer;
-  transition:
-    transform 180ms ease,
-    box-shadow 180ms ease,
-    background-color 180ms ease,
-    border-color 180ms ease;
-}
-
-.export-button:hover,
-.export-button:focus-visible {
-  transform: translateY(-1px);
-  box-shadow: var(--shadow);
-  background: #f6df95;
-  border-color: #f6df95;
-}
-
 .mobile-footer {
   display: none;
 }
@@ -292,7 +290,7 @@ h2 {
 }
 
 .section + .section {
-  margin-top: 7rem;
+  margin-top: 3rem;
 }
 
 @media (max-width: 900px) {
@@ -319,11 +317,43 @@ h2 {
 
 .eyebrow {
   display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   margin-bottom: 1.5rem;
   font-size: 0.82rem;
-  color: var(--accent);
+  color: #22c55e;
   text-transform: uppercase;
   letter-spacing: 0.16em;
+}
+
+.eyebrow::before {
+  content: "";
+  width: 0.95rem;
+  height: 0.95rem;
+  flex: 0 0 auto;
+  background-color: currentColor;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'%3E%3Cpath fill='black' d='M12 2.75 14.15 8.2 19.75 10.4 14.15 12.6 12 18.05 9.85 12.6 4.25 10.4 9.85 8.2 12 2.75Zm0 5.2-.84 2.12-2.18.86 2.18.86.84 2.12.84-2.12 2.18-.86-2.18-.86L12 7.95Zm6.4 7.3 1.1 2.2 2.2 1.1-2.2 1.1-1.1 2.2-1.1-2.2-2.2-1.1 2.2-1.1 1.1-2.2Z'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'%3E%3Cpath fill='black' d='M12 2.75 14.15 8.2 19.75 10.4 14.15 12.6 12 18.05 9.85 12.6 4.25 10.4 9.85 8.2 12 2.75Zm0 5.2-.84 2.12-2.18.86 2.18.86.84 2.12.84-2.12 2.18-.86-2.18-.86L12 7.95Zm6.4 7.3 1.1 2.2 2.2 1.1-2.2 1.1-1.1 2.2-1.1-2.2-2.2-1.1 2.2-1.1 1.1-2.2Z'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+.eyebrow--about::before {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'%3E%3Cpath fill='black' d='M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 4.1a1.4 1.4 0 1 1 0 2.8 1.4 1.4 0 0 1 0-2.8ZM10.6 11h2.8v7h-2.8v-7Z'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'%3E%3Cpath fill='black' d='M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 4.1a1.4 1.4 0 1 1 0 2.8 1.4 1.4 0 0 1 0-2.8ZM10.6 11h2.8v7h-2.8v-7Z'/%3E%3C/svg%3E");
+}
+
+.eyebrow--stack::before {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'%3E%3Cpath fill='black' d='m12 3 8.5 4.25L12 11.5 3.5 7.25 12 3Zm0 10.2 8.5-4.25v3.45L12 16.65 3.5 12.4V8.95L12 13.2Zm0 4.8 8.5-4.25v3.45L12 21.45l-8.5-4.25v-3.45L12 18Z'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'%3E%3Cpath fill='black' d='m12 3 8.5 4.25L12 11.5 3.5 7.25 12 3Zm0 10.2 8.5-4.25v3.45L12 16.65 3.5 12.4V8.95L12 13.2Zm0 4.8 8.5-4.25v3.45L12 21.45l-8.5-4.25v-3.45L12 18Z'/%3E%3C/svg%3E");
+}
+
+.eyebrow--experience::before {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'%3E%3Cpath fill='black' d='M10 6a2 2 0 0 1 2-2h0a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v10H4V9a2 2 0 0 1 2-2h4V6Zm2 0H10v1h2V6Zm-6 5v6h12v-6H6Zm4-2h4v1h-4V9Z'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'%3E%3Cpath fill='black' d='M10 6a2 2 0 0 1 2-2h0a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v10H4V9a2 2 0 0 1 2-2h4V6Zm2 0H10v1h2V6Zm-6 5v6h12v-6H6Zm4-2h4v1h-4V9Z'/%3E%3C/svg%3E");
+}
+
+.eyebrow--languages::before {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'%3E%3Cpath fill='black' d='M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.2 9h-2.1a15.9 15.9 0 0 0-1.1-4.1A8.05 8.05 0 0 1 18.2 11Zm-4.3 0h-3.8c.15-1.5.5-3.05 1.05-4.55.5-1.35 1.1-2.05 1.85-2.05s1.35.7 1.85 2.05c.55 1.5.9 3.05 1.05 4.55Zm-5.9 0H5.8a8.05 8.05 0 0 1 3.2-4.1c-.45 1.3-.75 2.65-1 4.1Zm0 2c.25 1.45.55 2.8 1 4.1A8.05 8.05 0 0 1 5.8 13h2.2Zm2.1 0h3.8c-.15 1.5-.5 3.05-1.05 4.55-.5 1.35-1.1 2.05-1.85 2.05s-1.35-.7-1.85-2.05c-.55-1.5-.9-3.05-1.05-4.55Zm5.9 0h2.1a8.05 8.05 0 0 1-3.2 4.1c.45-1.3.75-2.65 1-4.1Z'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'%3E%3Cpath fill='black' d='M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.2 9h-2.1a15.9 15.9 0 0 0-1.1-4.1A8.05 8.05 0 0 1 18.2 11Zm-4.3 0h-3.8c.15-1.5.5-3.05 1.05-4.55.5-1.35 1.1-2.05 1.85-2.05s1.35.7 1.85 2.05c.55 1.5.9 3.05 1.05 4.55Zm-5.9 0H5.8a8.05 8.05 0 0 1 3.2-4.1c-.45 1.3-.75 2.65-1 4.1Zm0 2c.25 1.45.55 2.8 1 4.1A8.05 8.05 0 0 1 5.8 13h2.2Zm2.1 0h3.8c-.15 1.5-.5 3.05-1.05 4.55-.5 1.35-1.1 2.05-1.85 2.05s-1.35-.7-1.85-2.05c-.55-1.5-.9-3.05-1.05-4.55Zm5.9 0h2.1a8.05 8.05 0 0 1-3.2 4.1c.45-1.3.75-2.65 1-4.1Z'/%3E%3C/svg%3E");
 }
 
 .copy-stack {
@@ -369,7 +399,7 @@ h2 {
 .stack-card h2,
 .language-row h2 {
   font-size: 1rem;
-  color: #f5f5f4;
+  color: #fcd34d;
 }
 
 .stack-card h2 {
@@ -429,7 +459,7 @@ h2 {
 .entry-card__body h2 {
   font-size: 1.16rem;
   line-height: 1.4;
-  color: #f5f5f4;
+  color: #fcd34d;
 }
 
 .entry-card__body h2 span {
@@ -771,10 +801,6 @@ h2 {
   }
 
   .social-list {
-    margin-top: 2rem;
-  }
-
-  .export-button {
     margin-top: 2rem;
   }
 

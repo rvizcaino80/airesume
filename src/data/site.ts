@@ -1,7 +1,7 @@
 export const defaultLanguage = "en";
 
 const social = [
-  { label: "GitHub", href: "https://github.com/rogersvizcaino" },
+  { label: "GitHub", href: "https://github.com/rvizcaino80" },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/rogersvizcaino/" }
 ];
 
@@ -23,15 +23,14 @@ export const siteContent = {
     profile: {
       name: "Rogers Vizcaino",
       role: "Product Engineer",
-      location: "Bogotá, Colombia",
       intro: [
-        "Product Engineer with 8+ years of professional experience building web applications and 20+ years of software development experience, working across product UI, application architecture, API integration, testing, and delivery workflows with AI as a practical multiplier."
+        "Product Engineer with 20+ years of experience in software development, with a focus on web applications."
       ],
       email: "rvizcaino@gmail.com",
       social
     },
     about: [
-      "I build modern software products that turn ambiguous requirements into working systems, with strengths across interfaces, application architecture, API integration, testing, and delivery.",
+      "I build modern software products that turn requirements into working systems, with strengths in interfaces, application architecture, API integration, testing, and delivery.",
       "My background combines software engineering with graphic design, UX, and UI, which helps me shape products that are not only functional but also clear, usable, and visually intentional.",
       "I am strongest in web product development with React, Vue.js, TypeScript, Node.js, and modern deployment workflows, but I do not position myself as a narrow frontend specialist. I work as a product-oriented engineer who moves where the product needs leverage.",
       "I use AI tools as part of daily implementation, research, prototyping, and maintenance. I see AI as a force multiplier for a generalist developer who can own more of the product surface end to end."
@@ -56,7 +55,6 @@ export const siteContent = {
           "JavaScript",
           "Node.js",
           "Next.js",
-          "Inertia.js",
           "Tailwind CSS",
           "Vite"
         ]
@@ -172,15 +170,14 @@ export const siteContent = {
     profile: {
       name: "Rogers Vizcaino",
       role: "Product Engineer",
-      location: "Bogotá, Colombia",
       intro: [
-        "Product Engineer con más de 8 años de experiencia profesional construyendo aplicaciones web y más de 20 años de experiencia en desarrollo de software, trabajando entre producto, arquitectura de aplicaciones, integración con APIs, testing y delivery, usando IA como multiplicador práctico."
+        "Product Engineer con más de 20 años de experiencia en desarrollo de software, con enfoque en aplicaciones web."
       ],
       email: "rvizcaino@gmail.com",
       social
     },
     about: [
-      "Construyo productos de software modernos que convierten requerimientos ambiguos en sistemas funcionales, con fortalezas en interfaces, arquitectura de aplicaciones, integración con APIs, testing y entrega continua.",
+      "Construyo productos de software modernos que convierten requerimientos en sistemas funcionales, con fortalezas en interfaces, arquitectura de aplicaciones, integración con APIs, testing y delivery.",
       "Mi trayectoria combina ingeniería de software con diseño gráfico, UX y UI, lo que me ayuda a crear productos que no solo funcionan bien, sino que también son claros, usables y visualmente intencionales.",
       "Mi fortaleza principal está en el desarrollo de productos web con React, Vue.js, TypeScript, Node.js y flujos modernos de despliegue, pero no me presento como un especialista frontend cerrado. Trabajo como un ingeniero orientado a producto que se mueve hacia donde el producto necesita más apalancamiento.",
       "Uso herramientas de IA como parte del trabajo diario de implementación, investigación, prototipado y mantenimiento. Veo la IA como un multiplicador para un developer generalista que puede asumir más del producto de punta a punta."
@@ -205,7 +202,6 @@ export const siteContent = {
           "JavaScript",
           "Node.js",
           "Next.js",
-          "Inertia.js",
           "Tailwind CSS",
           "Vite"
         ]
