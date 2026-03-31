@@ -30,6 +30,8 @@ export const siteContent = {
     profile: {
       name: "Rogers Vizcaino",
       role: "Product Engineer / Senior Web Engineer",
+      statement:
+        "AI helps me build faster; I still own understanding, validation, and corrections.",
       intro: [
         "Product Engineer with 20+ years of experience in software development, with a focus on web applications."
       ],
@@ -244,6 +246,8 @@ export const siteContent = {
     profile: {
       name: "Rogers Vizcaino",
       role: "Ingeniero de Producto / Ingeniero Web Senior",
+      statement:
+        "La IA me ayuda a construir más rápido; yo sigo siendo responsable de entender, validar y corregir.",
       intro: [
         "Ingeniero de Producto con más de 20 años de experiencia en desarrollo de software, con enfoque en aplicaciones web."
       ],

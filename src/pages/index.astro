@@ -68,6 +68,10 @@ const content = siteContent[defaultLanguage];
     </aside>
 
     <main class="content" id="top">
+      <section class="section section--statement">
+        <blockquote class="hero-statement" data-profile-statement>{content.profile.statement}</blockquote>
+      </section>
+
       <section class="section" id="about">
         <span class="eyebrow eyebrow--about" data-label-about>{content.labels.about}</span>
         <div class="copy-stack" data-about>
@@ -180,6 +184,7 @@ const content = siteContent[defaultLanguage];
     const exportButton = document.querySelector("[data-export-resume]");
     const languageButtons = Array.from(document.querySelectorAll("[data-language-button]"));
     const languageSwitch = document.querySelector(".language-switch");
+    const statement = document.querySelector("[data-profile-statement]");
     const brand = document.querySelector("[data-profile-name]");
     const role = document.querySelector("[data-profile-role]");
     const availability = document.querySelector("[data-label-availability]");
@@ -261,6 +266,7 @@ const content = siteContent[defaultLanguage];
       document.documentElement.lang = language === "es" ? "es" : "en";
       document.title = next.meta.title;
 
+      statement.textContent = next.profile.statement;
       brand.textContent = next.profile.name;
       role.textContent = next.profile.role;
       availability.textContent = next.labels.availability;
