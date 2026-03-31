@@ -19,6 +19,11 @@ export const siteContent = {
       workStyle: "How I Work",
       languages: "Languages",
       exportResume: "Export Resume PDF",
+      chatLauncher: "Ask me anything...",
+      chatDialog: "Ask me anything",
+      chatClose: "Close",
+      chatLabel: "Ask me anything...",
+      chatPlaceholder: "Ask me anything...",
       navAria: "Primary",
       socialAria: "Social links"
     },
@@ -228,6 +233,11 @@ export const siteContent = {
       workStyle: "Forma de trabajo",
       languages: "Idiomas",
       exportResume: "Exportar hoja de vida en PDF",
+      chatLauncher: "Pregúntame lo que quieras...",
+      chatDialog: "Pregúntame lo que quieras",
+      chatClose: "Cerrar",
+      chatLabel: "Pregúntame lo que quieras...",
+      chatPlaceholder: "Pregúntame lo que quieras...",
       navAria: "Navegación principal",
       socialAria: "Enlaces sociales"
     },

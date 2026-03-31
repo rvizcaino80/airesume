@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+import { defaultLanguage, siteContent } from "../data/site";
 
 type Role = "assistant" | "user";
 
@@ -44,6 +45,7 @@ export default function ChatWidget() {
   const [isOpen, setIsOpen] = useState(false);
   const [status, setStatus] = useState("");
   const [message, setMessage] = useState("");
+  const [language, setLanguage] = useState(defaultLanguage);
   const [messages, setMessages] = useState<Message[]>([
     {
       id: "intro",
@@ -84,7 +86,25 @@ export default function ChatWidget() {
     return () => window.removeEventListener("keydown", onKeyDown);
   }, []);
 
+  useEffect(() => {
+    const syncLanguage = () => {
+      const currentLanguage = document.documentElement.lang === "es" ? "es" : defaultLanguage;
+      setLanguage(currentLanguage);
+    };
+
+    syncLanguage();
+
+    const observer = new MutationObserver(syncLanguage);
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["lang"]
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   const looksLikeSpanish = useMemo(() => SPANISH_PATTERN.test(message.toLowerCase()), [message]);
+  const ui = siteContent[language] || siteContent[defaultLanguage];
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -186,7 +206,7 @@ export default function ChatWidget() {
         aria-expanded={isOpen}
         onClick={() => setIsOpen(true)}
       >
-        <span className="chat-launcher__label">Ask me anything...</span>
+        <span className="chat-launcher__label">{ui.labels.chatLauncher}</span>
         <span className="chat-launcher__pill">AI</span>
       </button>
 
@@ -204,15 +224,15 @@ export default function ChatWidget() {
           className="chat-panel"
           role="dialog"
           aria-modal="true"
-          aria-label="Ask me anything"
+          aria-label={ui.labels.chatDialog}
         >
           <button
             className="chat-mobile-close"
             type="button"
-            aria-label="Close chat"
+            aria-label={ui.labels.chatClose}
             onClick={() => setIsOpen(false)}
           >
-            Close
+            {ui.labels.chatClose}
           </button>
 
           <div className="chat-thread" ref={threadRef}>
@@ -254,14 +274,14 @@ export default function ChatWidget() {
 
           <form className="chat-composer" onSubmit={handleSubmit}>
             <label className="sr-only" htmlFor="chat-input">
-              Ask me anything...
+              {ui.labels.chatLabel}
             </label>
             <div className="chat-composer__row">
               <input
                 id="chat-input"
                 name="message"
                 type="text"
-                placeholder="Ask me anything..."
+                placeholder={ui.labels.chatPlaceholder}
                 autoComplete="off"
                 maxLength={100}
                 ref={inputRef}
