@@ -131,12 +131,12 @@ export const siteContent = {
       }
     ],
     workStyle: [
-      "Alta responsabilidad y rendición de cuentas",
-      "Mentalidad de startup: ejecución rápida e iteración continua",
-      "Fuerte criterio de producto",
-      "Autónomo y confiable en entornos remotos",
-      "Comunicación clara y proactiva",
-      "Enfocado en entregar impacto"
+      "High ownership and accountability",
+      "Startup mindset: fast execution and rapid iteration",
+      "Strong product thinking",
+      "Autonomous and reliable in remote environments",
+      "Clear, proactive communication",
+      "Focused on shipping and impact"
     ],
     experience: [
       {
@@ -340,12 +340,12 @@ export const siteContent = {
       }
     ],
     workStyle: [
-      "High ownership and accountability",
-      "Startup mindset: fast execution and rapid iteration",
-      "Strong product thinking",
-      "Autonomous and reliable in remote environments",
-      "Clear, proactive communication",
-      "Focused on shipping and impact"
+      "Alta responsabilidad y rendición de cuentas",
+      "Mentalidad de startup: ejecución rápida e iteración continua",
+      "Fuerte criterio de producto",
+      "Autónomo y confiable en entornos remotos",
+      "Comunicación clara y proactiva",
+      "Enfocado en entregar impacto"
     ],
     experience: [
       {
