@@ -34,8 +34,10 @@ const content = siteContent[defaultLanguage];
 
         <nav class="section-nav" data-nav aria-label={content.labels.navAria}>
           <a href="#about" data-nav-about>{content.labels.about}</a>
+          <a href="#highlights" data-nav-highlights>{content.labels.highlights}</a>
           <a href="#stack" data-nav-stack>{content.labels.stack}</a>
           <a href="#experience" data-nav-experience>{content.labels.experience}</a>
+          <a href="#workstyle" data-nav-workstyle>{content.labels.workStyle}</a>
           <a href="#languages" data-nav-languages>{content.labels.languages}</a>
         </nav>
 
@@ -73,6 +75,20 @@ const content = siteContent[defaultLanguage];
         </div>
       </section>
 
+      <section class="section" id="highlights">
+        <span class="eyebrow eyebrow--highlights" data-label-highlights>{content.labels.highlights}</span>
+        <div class="highlight-grid" data-highlights>
+          {
+            content.highlights.map((item) => (
+              <article class="highlight-card">
+                <p class="highlight-card__value">{item.value}</p>
+                <p class="highlight-card__label">{item.label}</p>
+              </article>
+            ))
+          }
+        </div>
+      </section>
+
       <section class="section" id="stack">
         <span class="eyebrow eyebrow--stack" data-label-stack>{content.labels.stack}</span>
         <div class="stack-grid" data-stack>
@@ -83,6 +99,20 @@ const content = siteContent[defaultLanguage];
                 <ul class="tag-list">
                   {group.items.map((item) => <li>{item}</li>)}
                 </ul>
+              </article>
+            ))
+          }
+        </div>
+      </section>
+
+      <section class="section" id="workstyle">
+        <span class="eyebrow eyebrow--workstyle" data-label-workstyle>{content.labels.workStyle}</span>
+        <div class="workstyle-grid" data-workstyle>
+          {
+            content.workStyle.map((item, index) => (
+              <article class="workstyle-card">
+                <p class="workstyle-card__index">0{index + 1}</p>
+                <p class="workstyle-card__copy">{item}</p>
               </article>
             ))
           }
@@ -156,17 +186,23 @@ const content = siteContent[defaultLanguage];
     const intro = document.querySelector("[data-profile-intro]");
     const nav = document.querySelector("[data-nav]");
     const navAbout = document.querySelector("[data-nav-about]");
+    const navHighlights = document.querySelector("[data-nav-highlights]");
     const navStack = document.querySelector("[data-nav-stack]");
     const navExperience = document.querySelector("[data-nav-experience]");
+    const navWorkStyle = document.querySelector("[data-nav-workstyle]");
     const navLanguages = document.querySelector("[data-nav-languages]");
     const email = document.querySelector("[data-profile-email]");
     const exportLabel = document.querySelector("[data-label-export]");
     const aboutLabel = document.querySelector("[data-label-about]");
+    const highlightsLabel = document.querySelector("[data-label-highlights]");
     const stackLabel = document.querySelector("[data-label-stack]");
     const experienceLabel = document.querySelector("[data-label-experience]");
+    const workStyleLabel = document.querySelector("[data-label-workstyle]");
     const languagesLabel = document.querySelector("[data-label-languages]");
     const about = document.querySelector("[data-about]");
+    const highlights = document.querySelector("[data-highlights]");
     const stack = document.querySelector("[data-stack]");
+    const workStyle = document.querySelector("[data-workstyle]");
     const experience = document.querySelector("[data-experience]");
     const languages = document.querySelector("[data-languages]");
     const socialList = document.querySelector("[data-social-list]");
@@ -179,6 +215,22 @@ const content = siteContent[defaultLanguage];
     };
 
     const renderTagList = (items) => `<ul class="tag-list">${items.map((item) => `<li>${item}</li>`).join("")}</ul>`;
+
+    const renderHighlightCards = (items) =>
+      items
+        .map(
+          (item) =>
+            `<article class="highlight-card"><p class="highlight-card__value">${item.value}</p><p class="highlight-card__label">${item.label}</p></article>`
+        )
+        .join("");
+
+    const renderWorkStyleCards = (items) =>
+      items
+        .map(
+          (item, index) =>
+            `<article class="workstyle-card"><p class="workstyle-card__index">0${index + 1}</p><p class="workstyle-card__copy">${item}</p></article>`
+        )
+        .join("");
 
     const renderSocials = (container, items) => {
       if (!container) return;
@@ -216,8 +268,10 @@ const content = siteContent[defaultLanguage];
 
       nav?.setAttribute("aria-label", next.labels.navAria);
       navAbout.textContent = next.labels.about;
+      navHighlights.textContent = next.labels.highlights;
       navStack.textContent = next.labels.stack;
       navExperience.textContent = next.labels.experience;
+      navWorkStyle.textContent = next.labels.workStyle;
       navLanguages.textContent = next.labels.languages;
 
       email.textContent = next.profile.email;
@@ -232,11 +286,14 @@ const content = siteContent[defaultLanguage];
 
       exportLabel.textContent = next.labels.exportResume;
       aboutLabel.textContent = next.labels.about;
+      highlightsLabel.textContent = next.labels.highlights;
       stackLabel.textContent = next.labels.stack;
       experienceLabel.textContent = next.labels.experience;
+      workStyleLabel.textContent = next.labels.workStyle;
       languagesLabel.textContent = next.labels.languages;
 
       renderParagraphs(about, next.about);
+      highlights.innerHTML = renderHighlightCards(next.highlights);
 
       stack.innerHTML = next.stack
         .map(
@@ -245,10 +302,12 @@ const content = siteContent[defaultLanguage];
         )
         .join("");
 
+      workStyle.innerHTML = renderWorkStyleCards(next.workStyle);
+
       experience.innerHTML = next.experience
         .map((item) => {
           const paragraphs = item.description
-            .split("\\n\\n")
+            .split("\n\n")
             .map((paragraph) => `<p>${paragraph}</p>`)
             .join("");
 

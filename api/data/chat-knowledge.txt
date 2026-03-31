@@ -12,31 +12,43 @@ Profile
 - Moves between Bogotá and Barranquilla
 - Works remotely with international teams
 - Open to remote work
-- 8+ years of professional experience building web applications
 - 20+ years of software development experience
+- 10+ years of web application and frontend experience
 
 Professional summary
 - Rogers is positioned as a product-oriented software engineer, not as a narrow frontend specialist.
-- Strongest in web products spanning interfaces, application architecture, API integration, testing, delivery, and product execution.
-- Specialized in React, Vue.js, TypeScript, Next.js, Node.js, Tailwind CSS, and modern web application development.
+- Strongest in web products spanning interfaces, application architecture, API integration, testing, delivery, SEO, performance, and product execution.
+- Specialized in React, Vue.js, TypeScript, Next.js, Node.js, Tailwind CSS, Vite, Inertia.js, Supabase, and modern web application development.
 - Combines engineering judgment with a background in graphic design, UX, and UI.
 - Works effectively with autonomy, handles ambiguity well, communicates clearly, and collaborates closely with product and engineering teams.
-- Uses AI as a practical multiplier for implementation, research, prototyping, iteration, and maintenance.
+- Has led teams, defined frontend standards, and improved development consistency and quality.
+- Uses AI as a practical multiplier for implementation, research, prototyping, iteration, prompt systems, and maintenance.
 
 Working style
 - Rogers prefers roles with broad product ownership rather than narrow specialization.
-- He works comfortably across UI, architecture, integration, testing, and delivery workflows.
+- He works comfortably across UI, architecture, integration, testing, delivery, SEO, and performance workflows.
 - He is motivated by turning ambiguous product needs into working software.
 - He is comfortable using AI tools to accelerate delivery while keeping engineering judgment and accountability.
+- He is reliable in remote environments and communicates proactively.
 
 Experience
+
+- PromptsMaestros.com, Founder / Senior Web Engineer, 2026-Present
+  - Built and scaled a production web platform using Astro and modern frontend practices.
+  - Grew organic traffic from 0 to 14,000+ monthly users and 550,000+ impressions.
+  - Designed SEO-first architecture, including indexing, canonicalization, and crawl control.
+  - Implemented Core Web Vitals improvements and CLS fixes.
+  - Built AI-powered features including structured workflows and prompt systems.
+  - Used AI tooling, including Claude, to accelerate implementation and iteration.
+  - Operated as full owner across product, frontend, backend integrations, and deployment.
+  - Highlight: Scaled a product from zero to meaningful search traffic while keeping it fast, maintainable, and conversion-oriented.
 
 - Authvia, Product Engineer, 2023-2025
   - Worked on a live financial SaaS platform with active users.
   - Built and evolved production product workflows in Vue.js and TypeScript.
   - Contributed reusable application patterns, shared UI systems, and cross-application integrations.
   - Collaborated closely with backend teams on API integrations, delivery workflows, and product execution.
-  - Participated in architecture, integration, quality, and shipping decisions, not just interface implementation.
+  - Participated in architecture, integration, quality, shipping decisions, and product ownership.
   - Worked in an environment that required autonomy, strong communication, thoughtful UX, and reliable execution in production.
   - Highlight: Built and evolved production workflows for a financial SaaS product with active users, contributing reusable systems, integration patterns, and architectural consistency across multiple application surfaces.
 
@@ -54,11 +66,23 @@ Experience
   - Contributed across implementation, integration, and product delivery for multiple web surfaces.
   - Highlight: Shipped reusable web application features and API-connected experiences for media products operating across multiple surfaces and high-traffic user flows.
 
+- Golden Security Services (GSS Analytix), Frontend Lead, 2018-2020
+  - Led a frontend team of 3 developers.
+  - Defined architecture, coding standards, and UI consistency guidelines.
+  - Built reusable component systems and internal design patterns.
+  - Conducted code reviews and mentored developers.
+  - Collaborated with backend teams on IoT analytics platforms.
+
 Capabilities
 - Product engineering
 - Software delivery
 - Application architecture
-- API integration
+- SEO-first web architecture
+- Performance optimization
+- Core Web Vitals
+- CLS fixes
+- AI-assisted implementation
+- Prompt systems and structured workflows
 - React
 - Vue.js
 - TypeScript
@@ -68,8 +92,11 @@ Capabilities
 - Inertia.js
 - Tailwind CSS
 - Vite
+- Supabase
 - REST APIs
 - SQL databases
+- MySQL
+- Postgres
 - React Query
 - Zustand
 - Redux
@@ -79,7 +106,6 @@ Capabilities
 - React Testing Library
 - Playwright
 - Cypress
-- Core Web Vitals
 - WCAG
 - GitHub Actions
 - GitLab CI/CD
@@ -88,23 +114,32 @@ Capabilities
 - AWS
 - Netlify
 - Vercel
+- Module Federation
 
 Product and architecture strengths
 - Turns product requirements into working software systems.
 - Balances UX, technical quality, maintainability, and delivery speed.
 - Comfortable with reusable systems, application patterns, and scalable web architectures.
-- Has experience with API-driven systems, state management, testing workflows, and CI/CD delivery practices.
+- Has experience with API-driven systems, state management, testing workflows, CI/CD delivery practices, SEO, and performance work.
 - Can be positioned for roles that need broad engineering leverage across product surfaces.
+
+How he works
+- High ownership and accountability.
+- Startup mindset: fast execution and rapid iteration.
+- Strong product thinking.
+- Autonomous and reliable in remote environments.
+- Clear, proactive communication.
+- Focused on shipping and impact.
 
 AI-assisted development
 - Uses AI-assisted development tools such as Cursor, Claude, and Codex.
 - Strong interest in AI-powered workflows and intelligent interfaces.
-- Uses AI tools as part of implementation, research, prototyping, and iteration.
+- Uses AI tools as part of implementation, research, prototyping, iteration, and prompt systems.
 - Sees AI as a multiplier for a generalist software engineer rather than as a replacement for engineering judgment.
 
 Languages
 - Spanish: Native
-- English: Professional working proficiency
+- English: Professional working proficiency (B2+)
 
 Rates and Availability
 
@@ -118,7 +153,7 @@ Availability
 - Contract or freelance engagements
 - Product engineering and software delivery
 - Web application architecture and scalable systems
-- AI-assisted product workflows and modern development processes
+- SEO-first products, performance improvements, and AI-assisted workflows
 
 Time zone
 - Based in Colombia (UTC -5)
@@ -131,5 +166,10 @@ If asked about Rogers' rate, only reference the rate listed in this section.
 
 Contact
 - Email: rvizcaino@gmail.com
-- GitHub: https://github.com/rogersvizcaino
+- GitHub: https://github.com/rvizcaino80
 - LinkedIn: https://www.linkedin.com/in/rogersvizcaino/
+
+Referencia en español
+- Si el usuario pregunta en español, responde en español.
+- Resume la experiencia con hechos concretos y evita inventar información.
+- Si una pregunta no está soportada por esta base de conocimiento, indícalo de forma breve y sugiere escribir por correo o LinkedIn.

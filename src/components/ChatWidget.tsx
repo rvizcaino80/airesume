@@ -10,7 +10,7 @@ type Message = {
 };
 
 const INITIAL_MESSAGE =
-  "Hi, I'm Rogers. Ask me anything about my experience, stack, or availability. I speak English and Spanish.";
+  "Hi, I'm Rogers. Ask me anything about my experience, stack, work style, or availability. I speak English and Spanish.";
 
 const SPANISH_PATTERN =
   /[áéíóúñ¿¡]|\b(hola|como|cómo|qué|que|cual|cuál|dónde|donde|por qué|porque|puedes|podrías|tienes|tengo|eres|soy|estás|esta|está|tú|tu|experiencia|trabajo|disponibilidad|español|correo|linkedin|remoto|frontend|stack|feliz|pregunta|hablar|hablas|puedo|quiero)\b/;
