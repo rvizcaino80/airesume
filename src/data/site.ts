@@ -42,7 +42,7 @@ export const siteContent = {
       "I build modern software products that turn requirements into working systems, with strengths in interfaces, application architecture, API integration, testing, and delivery.",
       "My background combines software engineering with graphic design, UX, and UI, which helps me shape products that are not only functional but also clear, usable, and visually intentional.",
       "My strongest experience is in web product development with React, Vue.js, TypeScript, Node.js, Next.js, and modern deployment workflows, but I do not position myself as a narrow frontend specialist. I work as a product-oriented engineer who moves where the product needs leverage.",
-      "I have also led teams, scaled SEO-first products, improved Core Web Vitals, and used AI tools as part of daily implementation, research, prototyping, and maintenance."
+      "I have also led teams, scaled SEO-first products, improved Core Web Vitals, built AI-assisted features, and worked comfortably across product, frontend, backend integrations, and delivery. I am strongest in roles where I can own a codebase, ship end-to-end, and stay close to the user experience."
     ],
     highlights: [
       {
@@ -70,20 +70,25 @@ export const siteContent = {
           "User Experience",
           "User Interfaces",
           "Feature ownership",
-          "Cross-functional execution"
+          "Cross-functional execution",
+          "Creator-facing product thinking"
         ]
       },
       {
         category: "Application Development",
         items: [
           "React",
+          "React 18",
           "Vue.js",
           "TypeScript",
           "JavaScript",
           "Node.js",
+          "Express",
           "Next.js",
-          "Tailwind CSS",
           "Vite",
+          "Tailwind CSS",
+          "shadcn/ui",
+          "TanStack Query",
           "Inertia.js"
         ]
       },
@@ -93,10 +98,26 @@ export const siteContent = {
           "Application architecture",
           "REST APIs",
           "BFF-friendly integration",
-          "SQL databases (MySQL, Postgres)",
+          "SQL databases (MySQL, PostgreSQL)",
+          "PostgreSQL via Supabase",
           "State management",
           "Microfrontends with Module Federation",
-          "Supabase"
+          "Supabase",
+          "Sequelize ORM",
+          "Prisma ORM"
+        ]
+      },
+      {
+        category: "Product Systems",
+        items: [
+          "Clerk",
+          "Stripe",
+          "Resend",
+          "Google Gemini",
+          "AI APIs",
+          "Scraping infrastructure",
+          "Backend reliability",
+          "Linear"
         ]
       },
       {
@@ -128,12 +149,14 @@ export const siteContent = {
       {
         category: "AI-Assisted Workflow",
         items: [
+          "Google Gemini",
           "AI-assisted implementation",
           "Rapid prototyping",
           "Tooling acceleration",
           "Cursor",
           "Claude",
-          "Codex"
+          "Codex",
+          "AI-assisted debugging"
         ]
       }
     ],
@@ -258,7 +281,7 @@ export const siteContent = {
       "Construyo productos de software modernos que convierten requerimientos en sistemas funcionales, con fortalezas en interfaces, arquitectura de aplicaciones, integración con APIs, testing y delivery.",
       "Mi trayectoria combina ingeniería de software con diseño gráfico, UX y UI, lo que me ayuda a crear productos que no solo funcionan bien, sino que también son claros, usables y visualmente intencionales.",
       "Mi experiencia más fuerte está en el desarrollo de productos web con React, Vue.js, TypeScript, Node.js, Next.js y flujos modernos de despliegue, pero no me presento como un especialista frontend cerrado. Trabajo como un ingeniero orientado a producto que se mueve hacia donde el producto necesita más apalancamiento.",
-      "También he liderado equipos, escalado productos con SEO-first, mejorado Core Web Vitals y usado herramientas de IA como parte del trabajo diario de implementación, investigación, prototipado y mantenimiento."
+      "También he liderado equipos, escalado productos SEO-first, mejorado Core Web Vitals, construido funcionalidades asistidas por IA y trabajado con comodidad entre producto, frontend, integraciones backend y delivery. Me desempeño mejor en roles donde puedo tomar ownership de una base de código, entregar de punta a punta y mantenerme cerca de la experiencia del usuario."
     ],
     highlights: [
       {
@@ -286,20 +309,25 @@ export const siteContent = {
           "Experiencia de usuario",
           "Interfaces de usuario",
           "Ownership de features",
-          "Ejecución cross-functional"
+          "Ejecución cross-functional",
+          "Pensamiento de producto para creadores"
         ]
       },
       {
         category: "Desarrollo de Aplicaciones",
         items: [
           "React",
+          "React 18",
           "Vue.js",
           "TypeScript",
           "JavaScript",
           "Node.js",
+          "Express",
           "Next.js",
-          "Tailwind CSS",
           "Vite",
+          "Tailwind CSS",
+          "shadcn/ui",
+          "TanStack Query",
           "Inertia.js"
         ]
       },
@@ -309,10 +337,26 @@ export const siteContent = {
           "Arquitectura de aplicaciones",
           "REST APIs",
           "Integración tipo BFF",
-          "Bases de datos SQL (MySQL, Postgres)",
+          "Bases de datos SQL (MySQL, PostgreSQL)",
+          "PostgreSQL vía Supabase",
           "Manejo de estado",
           "Microfrontends con Module Federation",
-          "Supabase"
+          "Supabase",
+          "Sequelize ORM",
+          "Prisma ORM"
+        ]
+      },
+      {
+        category: "Sistemas de Producto",
+        items: [
+          "Clerk",
+          "Stripe",
+          "Resend",
+          "Google Gemini",
+          "APIs de IA",
+          "Infraestructura de scraping",
+          "Confiabilidad backend",
+          "Linear"
         ]
       },
       {
@@ -344,12 +388,14 @@ export const siteContent = {
       {
         category: "Flujo de Trabajo con IA",
         items: [
+          "Google Gemini",
           "Implementación asistida por IA",
           "Prototipado rápido",
           "Aceleración con tooling",
           "Cursor",
           "Claude",
-          "Codex"
+          "Codex",
+          "Debugging asistido por IA"
         ]
       }
     ],

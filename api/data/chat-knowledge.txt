@@ -18,18 +18,20 @@ Profile
 Professional summary
 - Rogers is positioned as a product-oriented software engineer, not as a narrow frontend specialist.
 - Strongest in web products spanning interfaces, application architecture, API integration, testing, delivery, SEO, performance, and product execution.
-- Specialized in React, Vue.js, TypeScript, Next.js, Node.js, Tailwind CSS, Vite, Inertia.js, Supabase, and modern web application development.
+- Specialized in React, React 18, Vue.js, TypeScript, Next.js, Node.js, Express, Tailwind CSS, Vite, shadcn/ui, TanStack Query, Inertia.js, Supabase, Sequelize ORM, Prisma ORM, and modern web application development.
 - Combines engineering judgment with a background in graphic design, UX, and UI.
 - Works effectively with autonomy, handles ambiguity well, communicates clearly, and collaborates closely with product and engineering teams.
 - Has led teams, defined frontend standards, and improved development consistency and quality.
 - Uses AI as a practical multiplier for implementation, research, prototyping, iteration, prompt systems, and maintenance.
+- Is comfortable building creator-facing products and shipping features that are used by real users quickly.
 
 Working style
 - Rogers prefers roles with broad product ownership rather than narrow specialization.
-- He works comfortably across UI, architecture, integration, testing, delivery, SEO, and performance workflows.
+- He works comfortably across UI, architecture, integration, testing, delivery, SEO, performance, backend reliability, and scraping workflows.
 - He is motivated by turning ambiguous product needs into working software.
 - He is comfortable using AI tools to accelerate delivery while keeping engineering judgment and accountability.
 - He is reliable in remote environments and communicates proactively.
+- He is comfortable collaborating directly with founders and small product teams where decisions and shipping happen fast.
 
 Experience
 
@@ -83,16 +85,25 @@ Capabilities
 - CLS fixes
 - AI-assisted implementation
 - Prompt systems and structured workflows
+- Creator-facing product development
+- Google Gemini
 - React
+- React 18
 - Vue.js
 - TypeScript
 - JavaScript
 - Node.js
+- Express
 - Next.js
 - Inertia.js
 - Tailwind CSS
 - Vite
+- shadcn/ui
+- TanStack Query
 - Supabase
+- PostgreSQL via Supabase
+- Sequelize ORM
+- Prisma ORM
 - REST APIs
 - SQL databases
 - MySQL
@@ -115,12 +126,19 @@ Capabilities
 - Netlify
 - Vercel
 - Module Federation
+- Clerk
+- Stripe
+- Google Gemini
+- Resend
+- Linear
+- Scraping infrastructure
+- Backend reliability
 
 Product and architecture strengths
 - Turns product requirements into working software systems.
 - Balances UX, technical quality, maintainability, and delivery speed.
 - Comfortable with reusable systems, application patterns, and scalable web architectures.
-- Has experience with API-driven systems, state management, testing workflows, CI/CD delivery practices, SEO, and performance work.
+- Has experience with API-driven systems, state management, testing workflows, CI/CD delivery practices, SEO, performance work, backend reliability, and scraping workflows.
 - Can be positioned for roles that need broad engineering leverage across product surfaces.
 
 How he works
@@ -132,7 +150,7 @@ How he works
 - Focused on shipping and impact.
 
 AI-assisted development
-- Uses AI-assisted development tools such as Cursor, Claude, and Codex.
+- Uses AI-assisted development tools such as Google Gemini, Cursor, Claude, and Codex.
 - Strong interest in AI-powered workflows and intelligent interfaces.
 - Uses AI tools as part of implementation, research, prototyping, iteration, and prompt systems.
 - Sees AI as a multiplier for a generalist software engineer rather than as a replacement for engineering judgment.
