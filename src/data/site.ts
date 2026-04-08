@@ -41,7 +41,7 @@ export const siteContent = {
     about: [
       "I build modern software products that turn requirements into working systems, with strengths in interfaces, application architecture, API integration, testing, and delivery.",
       "My background combines software engineering with graphic design, UX, and UI, which helps me shape products that are not only functional but also clear, usable, and visually intentional.",
-      "My strongest experience is in web product development with React, Vue.js, TypeScript, Node.js, Next.js, and modern deployment workflows, but I do not position myself as a narrow frontend specialist. I work as a product-oriented engineer who moves where the product needs leverage.",
+      "My strongest experience is in web product development with Vue.js, JavaScript, TypeScript, Node.js, Nuxt, and modern deployment workflows, but I do not position myself as a narrow frontend specialist. I work as a product-oriented engineer who moves where the product needs leverage.",
       "I have also led teams, scaled SEO-first products, improved Core Web Vitals, built AI-assisted features, and worked comfortably across product, frontend, backend integrations, and delivery. I am strongest in roles where I can own a codebase, ship end-to-end, and stay close to the user experience."
     ],
     highlights: [
@@ -77,18 +77,24 @@ export const siteContent = {
       {
         category: "Application Development",
         items: [
-          "React",
-          "React 18",
-          "Vue.js",
-          "TypeScript",
           "JavaScript",
+          "TypeScript",
+          "Vue.js",
+          "Vue 2",
+          "Vue 3",
+          "Vue Options API",
+          "Vue Composition API",
+          "Vue Router",
+          "Pinia",
+          "Reusable composables",
+          "Component architecture",
+          "Typed frontend systems",
+          "Frontend refactoring",
           "Node.js",
           "Express",
-          "Next.js",
+          "Nuxt",
           "Vite",
           "Tailwind CSS",
-          "shadcn/ui",
-          "TanStack Query",
           "Inertia.js"
         ]
       },
@@ -101,6 +107,12 @@ export const siteContent = {
           "SQL databases (MySQL, PostgreSQL)",
           "PostgreSQL via Supabase",
           "State management",
+          "Reactive UI architecture",
+          "Form-heavy application flows",
+          "Reusable UI systems",
+          "Design systems",
+          "Type-safe API integration",
+          "Feature modularization",
           "Microfrontends with Module Federation",
           "Supabase",
           "Sequelize ORM",
@@ -125,13 +137,15 @@ export const siteContent = {
         items: [
           "Jest",
           "Vitest",
-          "React Testing Library",
+          "Vue component testing",
+          "End-to-end testing",
           "Playwright",
           "Cypress",
           "Core Web Vitals",
           "WCAG",
           "CI/CD",
-          "Performance profiling"
+          "Performance profiling",
+          "Debugging complex frontend flows"
         ]
       },
       {
@@ -190,9 +204,12 @@ export const siteContent = {
         title: "Product Engineer",
         company: "Authvia",
         description:
-          "Worked on a live financial SaaS platform with active users, building and evolving production product workflows in Vue.js and TypeScript. Contributed reusable application patterns, shared UI systems, and cross-application integrations that supported real operational use cases.\n\nCollaborated closely with backend teams on API integrations, delivery workflows, and product execution. This role required moving beyond a narrow interface layer into architecture, integration, quality, shipping decisions, and product ownership.\n\nThe work demanded autonomy, strong communication, thoughtful UX, and the ability to turn evolving product requirements into reliable software in production.\n\nHighlight: Built and evolved production workflows for a financial SaaS product with active users, contributing reusable systems, integration patterns, and architectural consistency across multiple application surfaces.",
+          "Worked on a live financial SaaS platform with active users, building and evolving production product workflows in Vue.js, JavaScript, and TypeScript. Developed features using both the Vue Options API and Composition API, contributed reusable application patterns, and built shared UI systems and cross-application integrations that supported real operational use cases.\n\nCollaborated closely with backend teams on API integrations, delivery workflows, and product execution. This role required moving beyond a narrow interface layer into architecture, integration, quality, shipping decisions, and product ownership, including typed frontend patterns, state management, and maintainable component design.\n\nThe work demanded autonomy, strong communication, thoughtful UX, and the ability to turn evolving product requirements into reliable software in production.\n\nHighlight: Built and evolved production workflows for a financial SaaS product with active users, contributing reusable Vue systems, integration patterns, and architectural consistency across multiple application surfaces.",
         tags: [
           "Vue.js",
+          "Vue Options API",
+          "Vue Composition API",
+          "JavaScript",
           "TypeScript",
           "Pinia",
           "Tailwind CSS",
@@ -206,10 +223,11 @@ export const siteContent = {
         title: "Software Engineer",
         company: "Crossbridge Global Partners",
         description:
-          "Contributed to enterprise software platforms supporting internal digital operations, including work for Louis Vuitton. Built product interfaces in React and TypeScript, reusable component systems, and application capabilities tied to real business workflows and SQL-backed systems.\n\nThis work required ownership, collaboration, and the ability to move through ambiguity while keeping implementation maintainable and aligned with delivery goals.\n\nHighlight: Delivered maintainable application interfaces and reusable patterns for internal enterprise platforms, helping product workflows stay clearer, faster, and more consistent across teams.",
+          "Contributed to enterprise software platforms supporting internal digital operations, including work for Louis Vuitton. Built product interfaces with JavaScript and TypeScript, reusable component systems, and application capabilities tied to real business workflows and SQL-backed systems.\n\nThis work required ownership, collaboration, and the ability to move through ambiguity while keeping implementation maintainable and aligned with delivery goals. It reinforced strong frontend engineering fundamentals around component architecture, typed models, maintainable UI patterns, and integration with business-critical systems.\n\nHighlight: Delivered maintainable application interfaces and reusable patterns for internal enterprise platforms, helping product workflows stay clearer, faster, and more consistent across teams.",
         tags: [
-          "React",
+          "JavaScript",
           "TypeScript",
+          "Component architecture",
           "Enterprise software",
           "MySQL",
           "Postgres",
@@ -221,17 +239,18 @@ export const siteContent = {
         title: "Software Developer",
         company: "Zemoga / DIRECTV",
         description:
-          "Worked on digital media and streaming products, building web application features, reusable interface components, and API-connected experiences used at scale. Contributed across implementation, integration, and product delivery for multiple web surfaces.\n\nHighlight: Shipped reusable web application features and API-connected experiences for media products operating across multiple surfaces and high-traffic user flows.",
-        tags: ["JavaScript", "REST APIs", "Web applications", "Product delivery"]
+          "Worked on digital media and streaming products, building JavaScript-driven web application features, reusable interface components, and API-connected experiences used at scale. Contributed across implementation, integration, and product delivery for multiple web surfaces, strengthening experience in frontend architecture, maintainable UI patterns, and high-traffic product flows.\n\nHighlight: Shipped reusable web application features and API-connected experiences for media products operating across multiple surfaces and high-traffic user flows.",
+        tags: ["JavaScript", "TypeScript", "REST APIs", "Web applications", "Product delivery"]
       },
       {
         period: "2018 - 2020",
         title: "Frontend Lead",
         company: "Golden Security Services (GSS Analytix)",
         description:
-          "Led a frontend team of 3 developers, defined architecture and coding standards, and built reusable component systems and internal design patterns. Worked closely with backend teams on IoT analytics platforms, code reviews, and mentoring.\n\nHighlight: Improved development quality and UI consistency through leadership, shared standards, and reusable frontend systems.",
+          "Led a frontend team of 3 developers, defined architecture and coding standards, and built reusable component systems and internal design patterns. Worked closely with backend teams on IoT analytics platforms, code reviews, and mentoring, while driving maintainable JavaScript architecture, consistency in implementation, and stronger engineering discipline across the frontend codebase.\n\nHighlight: Improved development quality and UI consistency through leadership, shared standards, and reusable frontend systems.",
         tags: [
           "Team leadership",
+          "JavaScript architecture",
           "Architecture",
           "Code reviews",
           "Mentoring",
@@ -280,7 +299,7 @@ export const siteContent = {
     about: [
       "Construyo productos de software modernos que convierten requerimientos en sistemas funcionales, con fortalezas en interfaces, arquitectura de aplicaciones, integración con APIs, testing y delivery.",
       "Mi trayectoria combina ingeniería de software con diseño gráfico, UX y UI, lo que me ayuda a crear productos que no solo funcionan bien, sino que también son claros, usables y visualmente intencionales.",
-      "Mi experiencia más fuerte está en el desarrollo de productos web con React, Vue.js, TypeScript, Node.js, Next.js y flujos modernos de despliegue, pero no me presento como un especialista frontend cerrado. Trabajo como un ingeniero orientado a producto que se mueve hacia donde el producto necesita más apalancamiento.",
+      "Mi experiencia más fuerte está en el desarrollo de productos web con Vue.js, JavaScript, TypeScript, Node.js, Nuxt y flujos modernos de despliegue, pero no me presento como un especialista frontend cerrado. Trabajo como un ingeniero orientado a producto que se mueve hacia donde el producto necesita más apalancamiento.",
       "También he liderado equipos, escalado productos SEO-first, mejorado Core Web Vitals, construido funcionalidades asistidas por IA y trabajado con comodidad entre producto, frontend, integraciones backend y delivery. Me desempeño mejor en roles donde puedo tomar ownership de una base de código, entregar de punta a punta y mantenerme cerca de la experiencia del usuario."
     ],
     highlights: [
@@ -316,18 +335,24 @@ export const siteContent = {
       {
         category: "Desarrollo de Aplicaciones",
         items: [
-          "React",
-          "React 18",
-          "Vue.js",
-          "TypeScript",
           "JavaScript",
+          "TypeScript",
+          "Vue.js",
+          "Vue 2",
+          "Vue 3",
+          "Vue Options API",
+          "Vue Composition API",
+          "Vue Router",
+          "Pinia",
+          "Composables reutilizables",
+          "Arquitectura de componentes",
+          "Sistemas frontend tipados",
+          "Refactorización frontend",
           "Node.js",
           "Express",
-          "Next.js",
+          "Nuxt",
           "Vite",
           "Tailwind CSS",
-          "shadcn/ui",
-          "TanStack Query",
           "Inertia.js"
         ]
       },
@@ -340,6 +365,12 @@ export const siteContent = {
           "Bases de datos SQL (MySQL, PostgreSQL)",
           "PostgreSQL vía Supabase",
           "Manejo de estado",
+          "Arquitectura reactiva de UI",
+          "Flujos de aplicación con formularios complejos",
+          "Sistemas reutilizables de UI",
+          "Design systems",
+          "Integración tipada con APIs",
+          "Modularización de features",
           "Microfrontends con Module Federation",
           "Supabase",
           "Sequelize ORM",
@@ -364,13 +395,15 @@ export const siteContent = {
         items: [
           "Jest",
           "Vitest",
-          "React Testing Library",
+          "Testing de componentes Vue",
+          "Testing end-to-end",
           "Playwright",
           "Cypress",
           "Core Web Vitals",
           "WCAG",
           "CI/CD",
-          "Performance profiling"
+          "Performance profiling",
+          "Debugging de flujos frontend complejos"
         ]
       },
       {
@@ -429,9 +462,12 @@ export const siteContent = {
         title: "Product Engineer",
         company: "Authvia",
         description:
-          "Trabajé en una plataforma financiera SaaS en producción con usuarios activos, construyendo y evolucionando flujos reales de producto en Vue.js y TypeScript. Aporté patrones reutilizables de aplicación, sistemas compartidos de UI e integraciones entre aplicaciones que soportaban casos de uso operativos reales.\n\nColaboré de cerca con equipos backend en integraciones con APIs, workflows de delivery y ejecución de producto. Este rol exigía ir más allá de una capa de interfaz limitada y participar en decisiones de arquitectura, integración, calidad, shipping y ownership de producto.\n\nEl trabajo requería autonomía, buena comunicación, criterio de UX y la capacidad de convertir requerimientos cambiantes en software confiable en producción.\n\nHighlight: Construí y evolucioné workflows de producción para un producto SaaS financiero con usuarios activos, aportando sistemas reutilizables, patrones de integración y consistencia arquitectónica entre múltiples superficies de aplicación.",
+          "Trabajé en una plataforma financiera SaaS en producción con usuarios activos, construyendo y evolucionando flujos reales de producto en Vue.js, JavaScript y TypeScript. Desarrollé features usando tanto Vue Options API como Composition API, aporté patrones reutilizables de aplicación y construí sistemas compartidos de UI e integraciones entre aplicaciones para casos de uso operativos reales.\n\nColaboré de cerca con equipos backend en integraciones con APIs, workflows de delivery y ejecución de producto. Este rol exigía ir más allá de una capa de interfaz limitada y participar en decisiones de arquitectura, integración, calidad, shipping y ownership de producto, incluyendo patrones frontend tipados, manejo de estado y diseño mantenible de componentes.\n\nEl trabajo requería autonomía, buena comunicación, criterio de UX y la capacidad de convertir requerimientos cambiantes en software confiable en producción.\n\nHighlight: Construí y evolucioné workflows de producción para un producto SaaS financiero con usuarios activos, aportando sistemas reutilizables en Vue, patrones de integración y consistencia arquitectónica entre múltiples superficies de aplicación.",
         tags: [
           "Vue.js",
+          "Vue Options API",
+          "Vue Composition API",
+          "JavaScript",
           "TypeScript",
           "Pinia",
           "Tailwind CSS",
@@ -445,10 +481,11 @@ export const siteContent = {
         title: "Software Engineer",
         company: "Crossbridge Global Partners",
         description:
-          "Contribuí a plataformas de software empresarial para operaciones digitales internas, incluyendo trabajo para Louis Vuitton. Construí interfaces de producto en React y TypeScript, sistemas reutilizables de componentes y capacidades de aplicación conectadas a workflows reales del negocio y a sistemas respaldados por SQL.\n\nEste trabajo requería ownership, colaboración y la capacidad de moverse con claridad en contextos ambiguos, manteniendo la implementación alineada con objetivos de delivery.\n\nHighlight: Entregué interfaces mantenibles y patrones reutilizables para plataformas empresariales internas, ayudando a que los workflows de producto fueran más claros, rápidos y consistentes entre equipos.",
+          "Contribuí a plataformas de software empresarial para operaciones digitales internas, incluyendo trabajo para Louis Vuitton. Construí interfaces de producto con JavaScript y TypeScript, sistemas reutilizables de componentes y capacidades de aplicación conectadas a workflows reales del negocio y a sistemas respaldados por SQL.\n\nEste trabajo requería ownership, colaboración y la capacidad de moverse con claridad en contextos ambiguos, manteniendo la implementación alineada con objetivos de delivery. Reforcé fundamentos sólidos de frontend alrededor de arquitectura de componentes, modelos tipados, patrones mantenibles de UI e integración con sistemas críticos del negocio.\n\nHighlight: Entregué interfaces mantenibles y patrones reutilizables para plataformas empresariales internas, ayudando a que los workflows de producto fueran más claros, rápidos y consistentes entre equipos.",
         tags: [
-          "React",
+          "JavaScript",
           "TypeScript",
+          "Arquitectura de componentes",
           "Software empresarial",
           "MySQL",
           "Postgres",
@@ -460,17 +497,18 @@ export const siteContent = {
         title: "Software Developer",
         company: "Zemoga / DIRECTV",
         description:
-          "Trabajé en productos digitales de medios y streaming, construyendo funcionalidades web, componentes reutilizables e interfaces conectadas con APIs utilizadas a escala. Contribuí entre implementación, integración y delivery de producto en múltiples superficies web.\n\nHighlight: Entregué funcionalidades reutilizables e integraciones con APIs para productos de media operando sobre múltiples superficies web y flujos de alto tráfico.",
-        tags: ["JavaScript", "REST APIs", "Aplicaciones web", "Delivery de producto"]
+          "Trabajé en productos digitales de medios y streaming, construyendo funcionalidades web impulsadas con JavaScript, componentes reutilizables e interfaces conectadas con APIs utilizadas a escala. Contribuí entre implementación, integración y delivery de producto en múltiples superficies web, fortaleciendo experiencia en arquitectura frontend, patrones mantenibles de UI y flujos de alto tráfico.\n\nHighlight: Entregué funcionalidades reutilizables e integraciones con APIs para productos de media operando sobre múltiples superficies web y flujos de alto tráfico.",
+        tags: ["JavaScript", "TypeScript", "REST APIs", "Aplicaciones web", "Delivery de producto"]
       },
       {
         period: "2018 - 2020",
         title: "Frontend Lead",
         company: "Golden Security Services (GSS Analytix)",
         description:
-          "Lideré un equipo frontend de 3 desarrolladores, definí arquitectura y estándares de código, y construí sistemas reutilizables de componentes y patrones internos de diseño. Trabajé de cerca con equipos backend en plataformas de analítica IoT, code reviews y mentoring.\n\nHighlight: Mejoré la calidad de desarrollo y la consistencia de la UI mediante liderazgo, estándares compartidos y sistemas frontend reutilizables.",
+          "Lideré un equipo frontend de 3 desarrolladores, definí arquitectura y estándares de código, y construí sistemas reutilizables de componentes y patrones internos de diseño. Trabajé de cerca con equipos backend en plataformas de analítica IoT, code reviews y mentoring, impulsando además una arquitectura JavaScript mantenible, consistencia de implementación y mayor disciplina de ingeniería en el frontend.\n\nHighlight: Mejoré la calidad de desarrollo y la consistencia de la UI mediante liderazgo, estándares compartidos y sistemas frontend reutilizables.",
         tags: [
           "Liderazgo de equipo",
+          "Arquitectura JavaScript",
           "Arquitectura",
           "Code reviews",
           "Mentoring",

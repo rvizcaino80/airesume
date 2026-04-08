@@ -18,7 +18,7 @@ Profile
 Professional summary
 - Rogers is positioned as a product-oriented software engineer, not as a narrow frontend specialist.
 - Strongest in web products spanning interfaces, application architecture, API integration, testing, delivery, SEO, performance, and product execution.
-- Specialized in React, React 18, Vue.js, TypeScript, Next.js, Node.js, Express, Tailwind CSS, Vite, shadcn/ui, TanStack Query, Inertia.js, Supabase, Sequelize ORM, Prisma ORM, and modern web application development.
+- Specialized in JavaScript, TypeScript, Vue.js, Vue 2, Vue 3, Vue Options API, Vue Composition API, Vue Router, Pinia, reusable composables, typed frontend architecture, Node.js, Express, Nuxt, Tailwind CSS, Vite, Inertia.js, Supabase, Sequelize ORM, Prisma ORM, and modern web application development.
 - Combines engineering judgment with a background in graphic design, UX, and UI.
 - Works effectively with autonomy, handles ambiguity well, communicates clearly, and collaborates closely with product and engineering teams.
 - Has led teams, defined frontend standards, and improved development consistency and quality.
@@ -47,25 +47,29 @@ Experience
 
 - Authvia, Product Engineer, 2023-2025
   - Worked on a live financial SaaS platform with active users.
-  - Built and evolved production product workflows in Vue.js and TypeScript.
-  - Contributed reusable application patterns, shared UI systems, and cross-application integrations.
+  - Built and evolved production product workflows in Vue.js, JavaScript, and TypeScript.
+  - Developed features using both the Vue Options API and Composition API.
+  - Contributed reusable application patterns, shared UI systems, composable frontend patterns, and cross-application integrations.
   - Collaborated closely with backend teams on API integrations, delivery workflows, and product execution.
   - Participated in architecture, integration, quality, shipping decisions, and product ownership.
+  - Worked with typed frontend patterns, state management, and maintainable component design.
   - Worked in an environment that required autonomy, strong communication, thoughtful UX, and reliable execution in production.
-  - Highlight: Built and evolved production workflows for a financial SaaS product with active users, contributing reusable systems, integration patterns, and architectural consistency across multiple application surfaces.
+  - Highlight: Built and evolved production workflows for a financial SaaS product with active users, contributing reusable Vue systems, integration patterns, and architectural consistency across multiple application surfaces.
 
 - Crossbridge Global Partners, Software Engineer, 2022-2023
   - Worked on enterprise software platforms supporting internal digital operations, including work for Louis Vuitton.
-  - Built product interfaces in React and TypeScript.
+  - Built product interfaces in JavaScript and TypeScript.
   - Developed reusable component systems and application capabilities tied to business workflows.
   - Worked with systems backed by SQL databases including MySQL and Postgres.
+  - Reinforced strong frontend fundamentals around component architecture, typed models, maintainable UI patterns, and business-system integration.
   - Contributed in contexts that required ownership, collaboration, and maintainable implementation.
   - Highlight: Delivered maintainable application interfaces and reusable patterns for internal enterprise platforms, helping product workflows stay clearer, faster, and more consistent across teams.
 
 - Zemoga / DIRECTV, Software Developer, 2021-2022
   - Worked on digital media and streaming products.
-  - Built web application features, reusable interface components, and API-connected experiences used at scale.
+  - Built JavaScript-driven web application features, reusable interface components, and API-connected experiences used at scale.
   - Contributed across implementation, integration, and product delivery for multiple web surfaces.
+  - Strengthened frontend architecture and maintainable UI implementation in high-traffic product flows.
   - Highlight: Shipped reusable web application features and API-connected experiences for media products operating across multiple surfaces and high-traffic user flows.
 
 - Golden Security Services (GSS Analytix), Frontend Lead, 2018-2020
@@ -74,6 +78,7 @@ Experience
   - Built reusable component systems and internal design patterns.
   - Conducted code reviews and mentored developers.
   - Collaborated with backend teams on IoT analytics platforms.
+  - Drove maintainable JavaScript architecture and stronger engineering discipline across the frontend codebase.
 
 Capabilities
 - Product engineering
@@ -87,19 +92,28 @@ Capabilities
 - Prompt systems and structured workflows
 - Creator-facing product development
 - Google Gemini
-- React
-- React 18
-- Vue.js
-- TypeScript
 - JavaScript
+- TypeScript
+- Vue.js
+- Vue 2
+- Vue 3
+- Vue Options API
+- Vue Composition API
+- Vue Router
+- Pinia
+- Reusable composables
+- Typed frontend architecture
+- Component architecture
+- Reusable UI systems
+- Reactive UI architecture
+- Frontend refactoring
+- Form-heavy application flows
 - Node.js
 - Express
-- Next.js
+- Nuxt
 - Inertia.js
 - Tailwind CSS
 - Vite
-- shadcn/ui
-- TanStack Query
 - Supabase
 - PostgreSQL via Supabase
 - Sequelize ORM
@@ -108,13 +122,12 @@ Capabilities
 - SQL databases
 - MySQL
 - Postgres
-- React Query
-- Zustand
-- Redux
-- Pinia
+- Type-safe API integration
+- Feature modularization
 - Jest
 - Vitest
-- React Testing Library
+- Vue component testing
+- End-to-end testing
 - Playwright
 - Cypress
 - WCAG
@@ -137,8 +150,8 @@ Capabilities
 Product and architecture strengths
 - Turns product requirements into working software systems.
 - Balances UX, technical quality, maintainability, and delivery speed.
-- Comfortable with reusable systems, application patterns, and scalable web architectures.
-- Has experience with API-driven systems, state management, testing workflows, CI/CD delivery practices, SEO, performance work, backend reliability, and scraping workflows.
+- Comfortable with reusable systems, application patterns, scalable web architectures, and Vue-centered frontend systems.
+- Has experience with API-driven systems, state management, testing workflows, CI/CD delivery practices, SEO, performance work, backend reliability, scraping workflows, and typed JavaScript/TypeScript application design.
 - Can be positioned for roles that need broad engineering leverage across product surfaces.
 
 How he works
